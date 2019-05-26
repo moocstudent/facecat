@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <script language="facecat">
+    </script>
+  </head>
+  <body>
+    <div type="splitlayout" dock="fill" layoutstyle="toptobottom" size="200,200" splitterposition="100,1" name="SplitLayoutDiv" text="SplitLayoutDiv" splitmode="PercentSize">
+      <div name="Div" size="200,100" />
+      <div name="Div2" size="200,100" />
+    </div>
+  </body>
+</html>

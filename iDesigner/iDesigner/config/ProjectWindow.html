@@ -1,0 +1,140 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <script type="text/javascript" language="facecat">
+      {按钮点击}
+      function onclick(){
+        var(sender, '', pName, '');
+        getsender(sender);
+        getproperty(pName, sender, 'name');
+        if(str.equals(pName, 'btnCancel')){
+          closewindow();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="usercontrol" cid="windowex" name="windowProject" size="623,442" location="0,0" Text="创建项目">
+      <div dock="fill" bordercolor="empty" backcolor="empty" size="200,200" margin="30,40,50,35" location="25,40">
+        <div type="splitlayout" layoutstyle="lefttoright" size="543,252" splitterposition="150,0,151,250" name="SplitLayoutDiv">
+          <div type="splitlayout" backcolor="empty" layoutstyle="toptobottom" size="150,400" splitterposition="0,30,0,31" name="SplitLayoutDiv2">
+            <label name="Label1" text="选择项目类型" autosize="false" textalign="middleleft" />
+            <tree name="tvTypes" headervisible="false" backcolor="empty" bordercolor="empty">
+              <tr>
+                <th name="node1" width="30" />
+                <th name="node2" width="120" />
+              </tr>
+              <nodes>
+                <node name="WinForm" text="WinForm">
+                  <node name="WinForm_Page" text="页面" />
+                </node>
+                <node name="MacOS" text="MacOS">
+                  <node name="MacOS_Page" text="页面" />
+                </node>
+                <node name="iOS" text="iOS">
+                  <node name="iOS_Page" text="页面" />
+                </node>
+                <node name="Android" text="Android">
+                  <node name="Android_Page" text="页面" />
+                </node>
+              </nodes>
+            </tree>
+          </div>
+          <table name="gridTemplate" gridlinecolor="empty" headervisible="false" backcolor="empty" bordercolor="empty">
+            <tr>
+              <th width="350" name="COLT1" text="项目类型" />
+              <th width="0" name="COLT2" text="标识1" />
+              <th width="0" name="COLT3" text="标识2" />
+              <th width="0" name="COLT4" text="标识3" />
+              <th width="0" name="COLT5" text="标识4" />
+            </tr>
+            <tr height="30">
+              <td>空白的页面(Html)</td>
+              <td>WinForm</td>
+              <td>Page</td>
+              <td>NormalHtml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>空白的页面</td>
+              <td>WinForm</td>
+              <td>Page</td>
+              <td>NormalXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>分割布局的页面</td>
+              <td>WinForm</td>
+              <td>Page</td>
+              <td>SplitLayoutXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>空白的页面</td>
+              <td>MacOS</td>
+              <td>Page</td>
+              <td>NormalXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>分割布局的页面</td>
+              <td>MacOS</td>
+              <td>Page</td>
+              <td>SplitLayoutXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>空白的页面</td>
+              <td>iOS</td>
+              <td>Page</td>
+              <td>NormalXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>空白的页面</td>
+              <td>Android</td>
+              <td>Page</td>
+              <td>NormalXml</td>
+              <td>0</td>
+            </tr>
+             <tr height="30">
+              <td>纵向布局的页面</td>
+              <td>Android</td>
+              <td>Page</td>
+              <td>VerticalLayoutXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>纵向布局的页面</td>
+              <td>iOS</td>
+              <td>Page</td>
+              <td>VerticalLayoutXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>横向布局的页面</td>
+              <td>Android</td>
+              <td>Page</td>
+              <td>HorizontalLayoutXml</td>
+              <td>0</td>
+            </tr>
+            <tr height="30">
+              <td>横向布局的页面</td>
+              <td>iOS</td>
+              <td>Page</td>
+              <td>HorizontalLayoutXml</td>
+              <td>0</td>
+            </tr>
+          </table>
+        </div>
+        <input type="usercontrol" cid="ribbonbutton2" name="btnCancel" location="458,342" size="79,20" Text="取消" onclick="onclick();" />
+        <input type="usercontrol" cid="ribbonbutton2" name="btnCreate" location="366,342" size="79,20" Text="创建" />
+        <label name="Label" text="位置:" location="18,308" size="65,20" />
+        <input type="text" name="txtName" text="FaceCat" location="60,265" size="390,23" />
+        <input type="usercontrol" cid="ribbonbutton2" name="btnBrowserDir" location="463,306" size="75,20" Text="浏览..." />
+        <label name="Label2" text="名称:" location="18,270" size="39,20" tabstop="false" />
+        <input type="text" name="txtPath" location="60,304" size="391,23" />
+      </div>
+    </input>
+  </body>
+</html>

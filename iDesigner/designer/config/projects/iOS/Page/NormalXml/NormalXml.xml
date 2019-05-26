@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<html>
+  <head>
+    <script language="facecat">
+      {鼠标点击事件}
+      function onclick(){
+      var(sender, '');
+      getsender(sender);
+      alert(sender);
+      }
+    </script>
+  </head>
+  <body>
+    <div dock="fill">
+      <input type="button" name="Hello world!" text="Click Me" onclick="onclick();" location="100,100"/>
+    </div>
+  </body>
+</html>

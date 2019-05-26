@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+    <script type="text/javascript" language="facecat">
+      {按钮点击}
+      function onclick(){
+        var(sender, '', pName, '');
+        getsender(sender);
+        getproperty(pName, sender, 'name');
+        if(str.equals(pName, 'btnCancel')){
+          closewindow();
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="usercontrol" cid="windowex" name="windowCollection" size="650,390" location="0,0" Text="集合编辑">
+      <div dock="fill" bordercolor="empty" backcolor="empty" size="200,200" margin="30,40,35,45">
+      <input type="usercontrol" cid="ribbonbutton2" name="btnAddClass" location="152,6" size="28,20" text="+" />
+      <input type="usercontrol" cid="ribbonbutton2" name="btnDeleteClass" location="189,6" size="26,20" text="-" />
+      <tree name="tvCollection" autoellipsis="true" gridlinecolor="empty" size="210,270" location="9,30" headervisible="false" showvscrollbar="true">
+        <tr>
+          <th width="210">节点1</th>
+        </tr>
+      </tree>
+      <input type="usercontrol" cid="propertygrid" name="gridProperty" location="269,30" size="305,271"/>
+      <label name="lblList" location="9,7" size="100,20" text="集合列表" />
+      <label name="lblSecurities" location="268,7" size="100,20" text="属性列表" />
+      </div>
+    </input>
+  </body>
+</html>

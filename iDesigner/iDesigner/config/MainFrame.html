@@ -1,0 +1,286 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<html>
+<head>
+    <!--脚本-->
+
+    <script language="facecat" type="text/javascript">
+      {鼠标点击事件}
+      function onclick(){
+        var(sender, '');
+        getsender(sender);
+        if(str.equals(sender, 'btnCreate')){
+            designer.Create();
+        }
+        else if(str.equals(sender, 'btnOpen')){
+            designer.Open();
+        }
+        else if(str.equals(sender, 'btnSave')){
+            designer.Save();
+        }
+        else if(str.equals(sender, 'btnSaveAll')){
+            designer.SaveAll();
+        }
+        else if(str.equals(sender, 'btnSaveAs')){
+            designer.SaveAs();
+        }
+        else if(str.equals(sender, 'btnCut')){
+            designer.Cut();
+        }
+        else if(str.equals(sender, 'btnCopy')){
+            designer.Copy(); 
+        }
+        else if(str.equals(sender, 'btnPaste')){
+            designer.Paste(); 
+        }
+        else if(str.equals(sender, 'btnDelete')){
+            designer.Delete(); 
+        }
+        else if(str.equals(sender, 'btnUndo')){
+            designer.Undo(); 
+        }       
+        else if(str.equals(sender, 'btnRedo')){
+            designer.Redo(); 
+        }
+        else if(str.equals(sender, 'btnViewSource')){
+            designer.ViewSource(); 
+        }
+        else if(str.equals(sender, 'btnActiveTab')){
+            designer.ActiveTab(); 
+        }
+        else if(str.equals(sender, 'btnPreview')){
+            designer.Preview();
+        }
+        else if(str.equals(sender, 'btnMirror')){
+            designer.Mirror();
+        }
+        else if(str.equals(sender, 'btnBugHole')){
+            designer.BugHole();
+        }
+        else if(str.equals(sender, 'btnRefresh')){
+            designer.Refresh();
+        }
+        else if(str.equals(sender, 'btnToParent')){
+            designer.ToParent();
+        }
+        else if(str.equals(sender, 'btnToSub')){
+            designer.ToSub();
+        }
+        else if(str.equals(sender, 'btnAlignLeft')){
+            designer.Align(0);
+        }
+        else if(str.equals(sender, 'btnAlignCenter')){
+            designer.Align(1);
+        }
+        else if(str.equals(sender, 'btnAlignRight')){
+            designer.Align(2);
+        }
+        else if(str.equals(sender, 'btnAlignTop')){
+            designer.Align(3);
+        }
+        else if(str.equals(sender, 'btnAlignMiddle')){
+            designer.Align(4);
+        }
+        else if(str.equals(sender, 'btnAlignBottom')){
+            designer.Align(5);
+        }
+        else if(str.equals(sender, 'btnSameWidth')){
+            designer.Align(6);
+        }
+        else if(str.equals(sender, 'btnSameHeight')){
+            designer.Align(7);
+        }
+        else if(str.equals(sender, 'btnSameSize')){
+            designer.Align(8);
+        }
+        else if(str.equals(sender, 'btnShowTeach')){
+            designer.ShowTeach();
+        }
+        else if(str.equals(sender, 'btnWhiteStyle')){
+            designer.ChangeStyle(0);
+        }
+        else if(str.equals(sender, 'btnBlueStyle')){
+            designer.ChangeStyle(1);
+        }
+        else if(str.equals(sender, 'btnBlackWhiteStyle')){
+            designer.ChangeStyle(2);
+        }
+        else if(str.equals(sender, 'btnReverseStyle')){
+            designer.ChangeStyle(3);
+        }
+      }
+    </script>
+
+    <style type="text/css">
+        .menubutton
+        {
+            margin:3,3,3,3;
+        }
+    </style>
+</head>
+<body>
+    <div type="splitlayout" name="divMain" layoutstyle="toptobottom" dock="fill" size="341,282"
+        splitterposition="0,45,0,45">
+        <!--主菜单-->
+        <div type="splitlayout" name="divMainMenu" layoutstyle="toptobottom" dock="fill"
+            size="400,400" splitterposition="0,45,0,45">
+            <div type="tabcontrol" name="tabMainMenu" selectedindex="0">
+                <div type="tabpage" name="tabPageFile" text="文件" headersize="60,20">
+                    <div type="layout" name="divLayoutMenu1" layoutstyle="lefttoright" dock="fill" bordercolor="empty" backcolor="empty">
+                        <!--新建按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnCreate" backimage="file='\images\NewDocument.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            style="margin: 3,3,3,3;" onclick="onclick();" size="55,40" text="新建" />
+                        <!--打开按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnOpen" backimage="file='\images\OpenFolder.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            style="margin: 3,3,3,3;" onclick="onclick();" size="55,40" text="打开" />
+                        <!--保存按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSave" backimage="file='\images\Save.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            style="margin: 3,3,3,3;" onclick="onclick();" enabled="false" size="55,40" text="保存" />
+                        <!--保存按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSaveAll" backimage="file='\images\SaveAll.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            style="margin: 3,3,3,3;" onclick="onclick();" enabled="false" size="75,40" text="全部保存" />
+                        <!--另存为按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSaveAs" backimage="file='\images\SaveAs.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            style="margin: 3,3,3,3;" onclick="onclick();" enabled="false" size="65,40" text="另存为" />
+                    </div>
+                </div>
+                <div type="tabpage" name="tabPageEdit" text="编辑" headersize="60,20">
+                    <div type="layout" name="divLayoutMenu2" layoutstyle="lefttoright" dock="fill" bordercolor="empty" backcolor="empty">
+                        <!--剪切按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnCut" backimage="file='\images\Cut.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="剪切" />
+                        <!--复制按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnCopy" backimage="file='\images\Copy.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="复制" />
+                        <!--粘贴按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnPaste" backimage="file='\images\Paste.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="粘贴" />
+                        <!--删除按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnDelete" backimage="file='\images\Delete.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="删除" />
+                        <!--撤销按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnUndo" backimage="file='\images\Edit_Undo.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="撤销" />
+                        <!--重做按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnRedo" backimage="file='\images\Edit_Redo.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            class="menubutton" onclick="onclick();" size="55,40" text="重做" />
+                    </div>
+                </div>
+                <div type="tabpage" name="tabPageView" text="视图" headersize="60,20">
+                    <div type="layout" name="divLayoutMenu3" layoutstyle="lefttoright" dock="fill" bordercolor="empty" backcolor="empty">
+                        <!--定位到XML按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnViewSource" backimage="file='\images\GoLtrHS.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" class="menubutton" onclick="onclick();" text="查看代码" />
+                        <!--预览按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnPreview" backimage="file='\images\Run.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="55,40" class="menubutton" onclick="onclick();" text="预览" />
+                        <!--镜像按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnMirror" backimage="file='\images\Class.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="55,40" class="menubutton" onclick="onclick();" text="镜像" />
+                        <!--虫洞按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnBugHole" backimage="file='\images\Conflict.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="55,40" class="menubutton" onclick="onclick();" text="虫洞" />
+                        <!--刷新按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnRefresh" backimage="file='\images\Restart.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="55,40" class="menubutton" onclick="onclick();" text="刷新" />
+                        <!--左对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignLeft" backimage="file='\images\AlignObjectsLeft.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="62,40" class="menubutton" onclick="onclick();"
+                            text="左对齐" />
+                        <!--居中对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignCenter" backimage="file='\images\AlignObjectsCenteredHorizontalHS.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="75,40" class="menubutton" onclick="onclick();"
+                            text="居中对齐" />
+                        <!--右对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignRight" backimage="file='\images\AlignObjectsRight.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="62,40" backcolor="255,255,255" class="menubutton" onclick="onclick();"
+                            text="右对齐" />
+                        <!--顶部对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignTop" backimage="file='\images\AlignObjectsTop.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="75,40" class="menubutton" onclick="onclick();"
+                            text="顶部对齐" />
+                        <!--中间对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignMiddle" backimage="file='\images\AlignObjectsCenteredVerticalHS.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="75,40" class="menubutton" onclick="onclick();"
+                            text="中间对齐" />
+                        <!--底部对齐按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnAlignBottom" backimage="file='\images\AlignObjectsBottom.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" backcolor="255,255,255" class="menubutton" onclick="onclick();"
+                            text="底部对齐" />
+                        <!--同样宽度按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSameWidth" backimage="file='\images\SameWidth.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="75,40" class="menubutton" onclick="onclick();"
+                            text="同样宽度" />
+                        <!--同样高度按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSameHeight" backimage="file='\images\SameHeight.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            backcolor="255,255,255" size="75,40" class="menubutton" onclick="onclick();"
+                            text="同样高度" />
+                        <!--同样大小按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnSameSize" backimage="file='\images\SameSize.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" backcolor="255,255,255" class="menubutton" onclick="onclick();"
+                            text="同样大小" />
+                    </div>
+                </div>
+                <div type="tabpage" name="tabPageProject" text="色彩" headersize="60,20">
+                    <div type="layout" name="divLayoutMenu4" layoutstyle="lefttoright" dock="fill" bordercolor="empty" backcolor="empty">
+                        <!--白色分格按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnWhiteStyle" backimage="file='\images\WhiteStyle.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" class="menubutton" onclick="onclick();" text="白色风格" />
+                        <!--蓝色风格按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnBlueStyle" backimage="file='\images\BlueStyle.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" class="menubutton" onclick="onclick();" text="蓝色风格" />
+                         <!--黑白风格按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnBlackWhiteStyle" backimage="file='\images\BlackWhiteStyle.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" class="menubutton" onclick="onclick();" text="黑白风格" />
+                        <!--反色风格按钮-->
+                        <input type="usercontrol" cid="imagebutton" name="btnReverseStyle" backimage="file='\images\ReverseStyle.bmp' highcolor='255,0,255' lowcolor='255,0,255'"
+                            size="75,40" class="menubutton" onclick="onclick();" text="反色风格" />
+                    </div>
+                </div>
+            </div>
+            <div />
+        </div>
+        <div type="splitlayout" layoutstyle="bottomtotop" size="100,100" splitterposition="0,70,0,70" bordercolor="empty">
+            <!--状态栏-->
+            <div size="300,30" backcolor="empty" name="divStatus">
+                <label name="lblXY" location="0,10" size="100,20" anchor="right,top" text="距左:0 上:0" />
+                <label name="lblWH" location="150,10" size="100,20" anchor="right,top" text="长:0 宽:0" />
+            </div>
+            <!--设计布局-->
+            <div type="splitlayout" candragsplitter="true" dock="fill" layoutstyle="lefttoright"
+                splitterposition="200,0,201,0" bordercolor="empty">
+                <!--工具箱-->
+                <input type="usercontrol" cid="toolboxlist" name="listToolBox" headervisible="false" bordercolor="empty"/>
+                <div type="splitlayout" candragsplitter="true" dock="fill" layoutstyle="righttoleft"
+                    size="325,220" splitterposition="40,0,41,0" bordercolor="empty">
+                    <div type="splitlayout" layoutstyle="toptobottom" size="100,100" splitterposition="0,45,0,45" bordercolor="empty">
+                        <div bordercolor="empty">
+                            <select name="cbList" width="100%" />
+                            <!--转至父级-->
+                            <input type="usercontrol" cid="ribbonbutton2" name="btnToParent" location="5,22" size="70,20"
+                                onclick="onclick();" text="+ 转至父级" />
+                            <!--转至子级-->
+                            <input type="usercontrol" cid="ribbonbutton2" name="btnToSub" location="80,22" size="70,20"
+                                onclick="onclick();" text="- 转至子级" />
+                        </div>
+                        <div type="tabcontrol" name="tabProperty" selectedindex="0" bordercolor="empty">
+                            <div type="tabpage" name="tabpageProperty" text="属性" bordercolor="empty" headerheight="60,20">
+                                <!--属性表格-->
+                                <input type="usercontrol" cid="propertygrid" name="gridProperty" dock="fill" />
+                            </div>
+                            <div type="tabpage" name="tabpageEvent" text="事件" bordercolor="empty" headerheight="60,20">
+                                <input type="usercontrol" cid="eventgrid" name="gridEvent" dock="fill" />
+                            </div>
+                        </div>
+                    </div>
+                    <!--设计多页夹-->
+                    <div type="tabcontrol" name="tabDesigner" size="325,220" bordercolor="empty" backcolor="empty">
+                        <!--活动页下拉按钮-->
+                        <input type="usercontrol" cid="ribbonbutton" name="btnActiveTab" size="20,20" onclick="onclick();"
+                            topmost="true" bordercolor="empty"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

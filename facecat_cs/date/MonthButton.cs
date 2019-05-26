@@ -1,0 +1,189 @@
+/*捂脸猫FaceCat框架 v1.0
+ 1.创始人-矿洞程序员-上海宁米科技创始人-脉脉KOL-陶德 (微信号:suade1984);
+ 2.联合创始人-上海宁米科技创始人-袁立涛(微信号:wx627378127);
+ 3.联合创始人-河北思尔企业管理咨询有限公司合伙人-肖添龙(微信号:xiaotianlong_luu);
+ 4.联合开发者-陈晓阳(微信号:chenxiaoyangzxy)，助理-朱炜(微信号:cnnic_zhu);
+ 5.该框架开源协议为BSD，欢迎对我们的创业活动进行各种支持，欢迎更多开发者加入。
+ 包含C/C++,Java,C#,iOS,MacOS,Linux六个版本的图形和通讯服务框架。
+ */
+
+using System;
+
+namespace FaceCat {
+    /// <summary>
+    /// 月的按钮
+    /// </summary>
+    public class MonthButton {
+        /// <summary>
+        /// 创建月的按钮
+        /// </summary>
+        /// <param name="calendar">创建月的按钮</param>
+        public MonthButton(FCCalendar calendar) {
+            m_calendar = calendar;
+        }
+
+        protected FCRect m_bounds;
+
+        /// <summary>
+        /// 获取或设置显示区域
+        /// </summary>
+        public virtual FCRect Bounds {
+            get { return m_bounds; }
+            set { m_bounds = value; }
+        }
+
+        protected FCCalendar m_calendar;
+
+        /// <summary>
+        /// 获取或设置日历控件
+        /// </summary>
+        public virtual FCCalendar Calendar {
+            get { return m_calendar; }
+            set { m_calendar = value; }
+        }
+
+        protected int m_month;
+
+        /// <summary>
+        /// 获取或设置月
+        /// </summary>
+        public virtual int Month {
+            get { return m_month; }
+            set { m_month = value; }
+        }
+
+        protected bool m_visible = true;
+
+        /// <summary>
+        /// 获取或设置是否可见
+        /// </summary>
+        public virtual bool Visible {
+            get { return m_visible; }
+            set { m_visible = value; }
+        }
+
+        protected int m_year;
+
+        /// <summary>
+        /// 获取或设置年
+        /// </summary>
+        public virtual int Year {
+            get { return m_year; }
+            set { m_year = value; }
+        }
+
+        /// <summary>
+        /// 获取月的文字
+        /// </summary>
+        /// <returns>月的文字</returns>
+        public virtual String GetMonthStr() {
+            switch (m_month) {
+                case 1:
+                    return "一月";
+                case 2:
+                    return "二月";
+                case 3:
+                    return "三月";
+                case 4:
+                    return "四月";
+                case 5:
+                    return "五月";
+                case 6:
+                    return "六月";
+                case 7:
+                    return "七月";
+                case 8:
+                    return "八月";
+                case 9:
+                    return "九月";
+                case 10:
+                    return "十月";
+                case 11:
+                    return "十一月";
+                case 12:
+                    return "十二月";
+                default:
+                    return "";
+            }
+        }
+
+        /// <summary>
+        /// 获取绘制的背景色
+        /// </summary>
+        /// <returns>背景色</returns>
+        protected virtual long getPaintingBackColor() {
+            return FCColor.Back;
+        }
+
+        /// <summary>
+        /// 获取绘制的边线颜色
+        /// </summary>
+        /// <returns>边线颜色</returns>
+        protected virtual long getPaintingBorderColor() {
+            return FCColor.Border;
+        }
+
+        /// <summary>
+        /// 获取要绘制的前景色
+        /// </summary>
+        /// <returns></returns>
+        protected virtual long getPaintingTextColor() {
+            return FCColor.Text;
+        }
+
+        /// <summary>
+        /// 触摸点击方法
+        /// </summary>
+        /// <param name="touchInfo">触摸信息</param>
+        public virtual void onClick(FCTouchInfo touchInfo) {
+            if (m_calendar != null) {
+                CMonth month = m_calendar.Years.getYear(m_calendar.MonthDiv.Year).Months.get(m_month);
+                m_calendar.Mode = FCCalendarMode.Day;
+                m_calendar.SelectedDay = month.Days.get(1);
+                m_calendar.update();
+                m_calendar.invalidate();
+            }
+        }
+
+        /// <summary>
+        /// 重绘背景方法
+        /// </summary>
+        /// <param name="paint">绘图对象</param>
+        /// <param name="clipRect">裁剪区域</param>
+        public virtual void onPaintBackGround(FCPaint paint, FCRect clipRect) {
+            long backColor = getPaintingBackColor();
+            paint.fillRect(backColor, m_bounds);
+        }
+
+        /// <summary>
+        /// 重绘边线方法
+        /// </summary>
+        /// <param name="paint">绘图对象</param>
+        /// <param name="clipRect">裁剪区域</param>
+        public virtual void onPaintBorder(FCPaint paint, FCRect clipRect) {
+            long borderColor = getPaintingBorderColor();
+            paint.drawLine(borderColor, 1, 0, m_bounds.left, m_bounds.bottom - 1, m_bounds.right - 1, m_bounds.bottom - 1);
+            paint.drawLine(borderColor, 1, 0, m_bounds.right - 1, m_bounds.top, m_bounds.right - 1, m_bounds.bottom - 1);
+        }
+
+        /// <summary>
+        /// 重绘前景方法
+        /// </summary>
+        /// <param name="paint">绘图对象</param>
+        /// <param name="clipRect">裁剪区域</param>
+        public virtual void onPaintForeground(FCPaint paint, FCRect clipRect) {
+            int width = m_bounds.right - m_bounds.left;
+            int height = m_bounds.bottom - m_bounds.top;
+            String monthStr = GetMonthStr();
+            FCFont font = m_calendar.Font;
+            FCSize textSize = paint.textSize(monthStr, font);
+            //创建渐变刷
+            FCRect tRect = new FCRect();
+            tRect.left = m_bounds.left + (width - textSize.cx) / 2;
+            tRect.top = m_bounds.top + (height - textSize.cy) / 2;
+            tRect.right = tRect.left + textSize.cx;
+            tRect.bottom = tRect.top + textSize.cy;
+            paint.drawText(monthStr, getPaintingTextColor(), font, tRect);
+        }
+    }
+}

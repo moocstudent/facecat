@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<html>
+  <head>
+  </head>
+  <body>
+    <!--样式选择窗体-->
+    <div type="usercontrol" cid="windowex" name="windowStyle" size="507,163" location="0,0" Text="样式选择">
+      <!--样式1按钮-->
+      <input type="usercontrol" cid="ribbonbutton" name="btnStyle1" location="30,39" size="140,100" Text="标准" font="Arial,40,Bold" />
+      <!--样式2按钮-->
+      <input type="usercontrol" cid="ribbonbutton" name="btnStyle2" location="183,39" size="140,100" Text="标准2" font="Arial,40,bold" />
+      <!--样式3按钮-->
+      <input type="usercontrol" cid="ribbonbutton" name="btnStyle3" location="338,39" size="140,100" Text="易盛" font="Arial,40,bold" />
+    </div>
+  </body>
+</html>

@@ -1,0 +1,1342 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F1EE5D5228A57C40081A064 /* FCBinary.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F1EE5D4228A57C40081A064 /* FCBinary.h */; };
+		5F31153D2282C60900EB6767 /* ContextPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F31153C2282C60900EB6767 /* ContextPaint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F31153F2282C61600EB6767 /* ContextPaint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F31153E2282C61600EB6767 /* ContextPaint.mm */; };
+		5F39D772225EDAC600D805CC /* YearDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D763225EDAC500D805CC /* YearDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D773225EDAC600D805CC /* DateTitle.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D764225EDAC500D805CC /* DateTitle.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D774225EDAC600D805CC /* YearButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D765225EDAC500D805CC /* YearButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D775225EDAC600D805CC /* ArrowButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D766225EDAC500D805CC /* ArrowButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D776225EDAC600D805CC /* TimeDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D767225EDAC500D805CC /* TimeDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D777225EDAC600D805CC /* MonthButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D768225EDAC500D805CC /* MonthButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D778225EDAC600D805CC /* DayButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D769225EDAC500D805CC /* DayButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D779225EDAC600D805CC /* HeadDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76A225EDAC500D805CC /* HeadDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77A225EDAC600D805CC /* CMonth.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76B225EDAC500D805CC /* CMonth.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77B225EDAC600D805CC /* CYear.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76C225EDAC500D805CC /* CYear.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77C225EDAC600D805CC /* DayDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76D225EDAC600D805CC /* DayDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77D225EDAC600D805CC /* FCCalendar.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76E225EDAC600D805CC /* FCCalendar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77E225EDAC600D805CC /* CYears.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D76F225EDAC600D805CC /* CYears.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D77F225EDAC600D805CC /* MonthDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D770225EDAC600D805CC /* MonthDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D780225EDAC600D805CC /* CDay.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D771225EDAC600D805CC /* CDay.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D784225EDAD300D805CC /* FCHttpPostService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D781225EDAD300D805CC /* FCHttpPostService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D785225EDAD300D805CC /* FCClientService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D782225EDAD300D805CC /* FCClientService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D786225EDAD300D805CC /* FCHttpGetService.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F39D783225EDAD300D805CC /* FCHttpGetService.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F39D79D225EDBA700D805CC /* MonthButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D78E225EDBA500D805CC /* MonthButton.mm */; };
+		5F39D79E225EDBA700D805CC /* DayButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D78F225EDBA500D805CC /* DayButton.mm */; };
+		5F39D79F225EDBA700D805CC /* CYears.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D790225EDBA600D805CC /* CYears.mm */; };
+		5F39D7A0225EDBA700D805CC /* CYear.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D791225EDBA600D805CC /* CYear.mm */; };
+		5F39D7A1225EDBA700D805CC /* DayDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D792225EDBA600D805CC /* DayDiv.mm */; };
+		5F39D7A2225EDBA700D805CC /* ArrowButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D793225EDBA600D805CC /* ArrowButton.mm */; };
+		5F39D7A3225EDBA700D805CC /* TimeDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D794225EDBA600D805CC /* TimeDiv.mm */; };
+		5F39D7A4225EDBA700D805CC /* MonthDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D795225EDBA600D805CC /* MonthDiv.mm */; };
+		5F39D7A5225EDBA700D805CC /* CDay.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D796225EDBA600D805CC /* CDay.mm */; };
+		5F39D7A6225EDBA700D805CC /* DateTitle.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D797225EDBA600D805CC /* DateTitle.mm */; };
+		5F39D7A7225EDBA700D805CC /* YearDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D798225EDBA600D805CC /* YearDiv.mm */; };
+		5F39D7A8225EDBA700D805CC /* CMonth.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D799225EDBA600D805CC /* CMonth.mm */; };
+		5F39D7A9225EDBA700D805CC /* HeadDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D79A225EDBA700D805CC /* HeadDiv.mm */; };
+		5F39D7AA225EDBA700D805CC /* YearButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D79B225EDBA700D805CC /* YearButton.mm */; };
+		5F39D7AB225EDBA700D805CC /* FCCalendar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D79C225EDBA700D805CC /* FCCalendar.mm */; };
+		5F39D7B7225EDBEB00D805CC /* FCUIEvent.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D7B4225EDBEB00D805CC /* FCUIEvent.mm */; };
+		5F39D7B8225EDBEB00D805CC /* FCUIScript.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D7B5225EDBEB00D805CC /* FCUIScript.mm */; };
+		5F39D7B9225EDBEB00D805CC /* FCUIXml.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5F39D7B6225EDBEB00D805CC /* FCUIXml.mm */; };
+		5FBF5A89225C41E8007D87B7 /* libxml2.2.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBF5A88225C41E8007D87B7 /* libxml2.2.tbd */; };
+		5FBF5A8B225C8DEC007D87B7 /* FCFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBF5A8A225C8DEC007D87B7 /* FCFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FBF5A8D225C8DF4007D87B7 /* FCFile.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF5A8C225C8DF4007D87B7 /* FCFile.mm */; };
+		5FBF5A99225CC672007D87B7 /* FCHttpGetService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF5A96225CC672007D87B7 /* FCHttpGetService.mm */; };
+		5FBF5A9A225CC672007D87B7 /* FCClientService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF5A97225CC672007D87B7 /* FCClientService.mm */; };
+		5FBF5A9B225CC672007D87B7 /* FCHttpPostService.mm in Sources */ = {isa = PBXBuildFile; fileRef = 5FBF5A98225CC672007D87B7 /* FCHttpPostService.mm */; };
+		5FBF5A9D225CC73C007D87B7 /* FCLock.h in Headers */ = {isa = PBXBuildFile; fileRef = 5FBF5A9C225CC73C007D87B7 /* FCLock.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5FBF5A9F225CC8C4007D87B7 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5FBF5A9E225CC8C4007D87B7 /* libz.tbd */; };
+		690196CE1E70FAD100BE288C /* facecat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 690196C41E70FAD100BE288C /* facecat.framework */; };
+		690196D31E70FAD100BE288C /* facecatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 690196D21E70FAD100BE288C /* facecatTests.m */; };
+		690196D51E70FAD100BE288C /* facecat.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196C71E70FAD100BE288C /* facecat.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690196DF1E70FB5500BE288C /* stdafx.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196DE1E70FB5500BE288C /* stdafx.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901972C1E70FB6400BE288C /* FCLib.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E21E70FB6400BE288C /* FCLib.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901972E1E70FB6400BE288C /* FCView.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E41E70FB6400BE288C /* FCView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901972F1E70FB6400BE288C /* FCHost.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E51E70FB6400BE288C /* FCHost.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197301E70FB6400BE288C /* FCPaint.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E61E70FB6400BE288C /* FCPaint.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197311E70FB6400BE288C /* FCProperty.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E71E70FB6400BE288C /* FCProperty.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197321E70FB6400BE288C /* FCStr.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E81E70FB6400BE288C /* FCStr.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197331E70FB6400BE288C /* FCNative.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196E91E70FB6400BE288C /* FCNative.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197341E70FB6400BE288C /* FCButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196EB1E70FB6400BE288C /* FCButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197351E70FB6400BE288C /* FCCheckBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196EC1E70FB6400BE288C /* FCCheckBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197361E70FB6400BE288C /* FCRadioButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196ED1E70FB6400BE288C /* FCRadioButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197371E70FB6400BE288C /* BaseShape.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196EF1E70FB6400BE288C /* BaseShape.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197381E70FB6400BE288C /* ChartDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F01E70FB6400BE288C /* ChartDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197391E70FB6400BE288C /* FCChart.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F11E70FB6400BE288C /* FCChart.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901973A1E70FB6400BE288C /* FCScript.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F21E70FB6400BE288C /* FCScript.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901973D1E70FB6400BE288C /* CrossLine.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F51E70FB6400BE288C /* CrossLine.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901973E1E70FB6400BE288C /* CrossLineTip.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F61E70FB6400BE288C /* CrossLineTip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901973F1E70FB6400BE288C /* FCDataTable.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F71E70FB6400BE288C /* FCDataTable.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197401E70FB6400BE288C /* ChartToolTip.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F81E70FB6400BE288C /* ChartToolTip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197411E70FB6400BE288C /* Enums.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196F91E70FB6400BE288C /* Enums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197421E70FB6400BE288C /* HScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FA1E70FB6400BE288C /* HScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197431E70FB6400BE288C /* PExtend.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FB1E70FB6400BE288C /* PExtend.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197441E70FB6400BE288C /* FCPlot.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FC1E70FB6400BE288C /* FCPlot.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197451E70FB6400BE288C /* ScaleGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FD1E70FB6400BE288C /* ScaleGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197461E70FB6400BE288C /* SelectArea.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FE1E70FB6400BE288C /* SelectArea.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197471E70FB6400BE288C /* ChartTitleBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 690196FF1E70FB6400BE288C /* ChartTitleBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197481E70FB6400BE288C /* VScale.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197001E70FB6400BE288C /* VScale.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197491E70FB6400BE288C /* FCBandedGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197021E70FB6400BE288C /* FCBandedGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974A1E70FB6400BE288C /* FCBandedGridColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197031E70FB6400BE288C /* FCBandedGridColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974B1E70FB6400BE288C /* FCGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197041E70FB6400BE288C /* FCGrid.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974C1E70FB6400BE288C /* FCGridBand.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197051E70FB6400BE288C /* FCGridBand.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974D1E70FB6400BE288C /* FCGridCell.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197061E70FB6400BE288C /* FCGridCell.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974E1E70FB6400BE288C /* FCGridCellExtends.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197071E70FB6400BE288C /* FCGridCellExtends.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901974F1E70FB6400BE288C /* FCGridColumn.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197081E70FB6400BE288C /* FCGridColumn.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197501E70FB6400BE288C /* FCGridEnums.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197091E70FB6400BE288C /* FCGridEnums.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197511E70FB6400BE288C /* FCGridRow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901970A1E70FB6400BE288C /* FCGridRow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197521E70FB6400BE288C /* FCLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901970C1E70FB6400BE288C /* FCLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197531E70FB6400BE288C /* FCLinkLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901970D1E70FB6400BE288C /* FCLinkLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197541E70FB6400BE288C /* FCDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901970F1E70FB6400BE288C /* FCDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197551E70FB6400BE288C /* FCGroupBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197101E70FB6400BE288C /* FCGroupBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197561E70FB6400BE288C /* FCLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197111E70FB6400BE288C /* FCLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197571E70FB6400BE288C /* FCSplitLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197121E70FB6400BE288C /* FCSplitLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197581E70FB6400BE288C /* FCTableLayoutDiv.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197131E70FB6400BE288C /* FCTableLayoutDiv.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197591E70FB6400BE288C /* FCMenu.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197151E70FB6400BE288C /* FCMenu.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975A1E70FB6400BE288C /* FCMenuItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197161E70FB6400BE288C /* FCMenuItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975B1E70FB6400BE288C /* FCHScrollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197181E70FB6400BE288C /* FCHScrollBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975C1E70FB6400BE288C /* FCScrollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197191E70FB6400BE288C /* FCScrollBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975D1E70FB6400BE288C /* FCVScrollBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901971A1E70FB6400BE288C /* FCVScrollBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975E1E70FB6400BE288C /* CBase64.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901971C1E70FB6400BE288C /* CBase64.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		6901975F1E70FB6400BE288C /* FCClientSocket.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901971D1E70FB6400BE288C /* FCClientSocket.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197601E70FB6400BE288C /* FCClientSockets.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901971E1E70FB6400BE288C /* FCClientSockets.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197611E70FB6400BE288C /* FCTabControl.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197201E70FB6400BE288C /* FCTabControl.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197621E70FB6400BE288C /* FCTabPage.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197211E70FB6400BE288C /* FCTabPage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197631E70FB6400BE288C /* FCComboBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197231E70FB6400BE288C /* FCComboBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197641E70FB6400BE288C /* FCSpin.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197241E70FB6400BE288C /* FCSpin.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197651E70FB6400BE288C /* FCTextBox.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197251E70FB6400BE288C /* FCTextBox.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197661E70FB6400BE288C /* FCTree.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197271E70FB6400BE288C /* FCTree.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197671E70FB6400BE288C /* FCTreeNode.h in Headers */ = {isa = PBXBuildFile; fileRef = 690197281E70FB6400BE288C /* FCTreeNode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197681E70FB6400BE288C /* FCWindow.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901972A1E70FB6400BE288C /* FCWindow.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197691E70FB6400BE288C /* FCWindowFrame.h in Headers */ = {isa = PBXBuildFile; fileRef = 6901972B1E70FB6400BE288C /* FCWindowFrame.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		690197B61E70FB7300BE288C /* FCView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901976D1E70FB7300BE288C /* FCView.mm */; };
+		690197B71E70FB7300BE288C /* ControlHost.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901976E1E70FB7300BE288C /* ControlHost.mm */; };
+		690197B81E70FB7300BE288C /* FCPaint.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901976F1E70FB7300BE288C /* FCPaint.mm */; };
+		690197B91E70FB7300BE288C /* FCStr.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197701E70FB7300BE288C /* FCStr.mm */; };
+		690197BA1E70FB7300BE288C /* FCNative.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197711E70FB7300BE288C /* FCNative.mm */; };
+		690197BB1E70FB7300BE288C /* FCButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197731E70FB7300BE288C /* FCButton.mm */; };
+		690197BC1E70FB7300BE288C /* FCCheckBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197741E70FB7300BE288C /* FCCheckBox.mm */; };
+		690197BD1E70FB7300BE288C /* FCRadioButton.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197751E70FB7300BE288C /* FCRadioButton.mm */; };
+		690197BE1E70FB7300BE288C /* BarShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197771E70FB7300BE288C /* BarShape.mm */; };
+		690197BF1E70FB7300BE288C /* BaseShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197781E70FB7300BE288C /* BaseShape.mm */; };
+		690197C01E70FB7300BE288C /* CandleShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197791E70FB7300BE288C /* CandleShape.mm */; };
+		690197C11E70FB7300BE288C /* ChartDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901977A1E70FB7300BE288C /* ChartDiv.mm */; };
+		690197C21E70FB7300BE288C /* FCChart.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901977B1E70FB7300BE288C /* FCChart.mm */; };
+		690197C31E70FB7300BE288C /* FCScript.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901977C1E70FB7300BE288C /* FCScript.mm */; };
+		690197C51E70FB7300BE288C /* CrossLine.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901977E1E70FB7300BE288C /* CrossLine.mm */; };
+		690197C61E70FB7300BE288C /* CrossLineTip.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901977F1E70FB7300BE288C /* CrossLineTip.mm */; };
+		690197C71E70FB7300BE288C /* FCDataTable.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197801E70FB7300BE288C /* FCDataTable.mm */; };
+		690197C81E70FB7300BE288C /* ChartToolTip.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197811E70FB7300BE288C /* ChartToolTip.mm */; };
+		690197C91E70FB7300BE288C /* HScale.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197821E70FB7300BE288C /* HScale.mm */; };
+		690197CA1E70FB7300BE288C /* PExtend.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197831E70FB7300BE288C /* PExtend.mm */; };
+		690197CB1E70FB7300BE288C /* FCPlot.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197841E70FB7300BE288C /* FCPlot.mm */; };
+		690197CC1E70FB7300BE288C /* PolylineShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197851E70FB7300BE288C /* PolylineShape.mm */; };
+		690197CD1E70FB7300BE288C /* ScaleGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197861E70FB7300BE288C /* ScaleGrid.mm */; };
+		690197CE1E70FB7300BE288C /* SelectArea.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197871E70FB7300BE288C /* SelectArea.mm */; };
+		690197CF1E70FB7300BE288C /* TextShape.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197881E70FB7300BE288C /* TextShape.mm */; };
+		690197D01E70FB7300BE288C /* ChartTitleBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197891E70FB7300BE288C /* ChartTitleBar.mm */; };
+		690197D11E70FB7300BE288C /* VScale.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901978A1E70FB7300BE288C /* VScale.mm */; };
+		690197D21E70FB7300BE288C /* FCBandedGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901978C1E70FB7300BE288C /* FCBandedGrid.mm */; };
+		690197D31E70FB7300BE288C /* FCBandedGridColumn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901978D1E70FB7300BE288C /* FCBandedGridColumn.mm */; };
+		690197D41E70FB7300BE288C /* FCGrid.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901978E1E70FB7300BE288C /* FCGrid.mm */; };
+		690197D51E70FB7300BE288C /* FCGridBand.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901978F1E70FB7300BE288C /* FCGridBand.mm */; };
+		690197D61E70FB7300BE288C /* FCGridCell.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197901E70FB7300BE288C /* FCGridCell.mm */; };
+		690197D71E70FB7300BE288C /* FCGridCellExtends.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197911E70FB7300BE288C /* FCGridCellExtends.mm */; };
+		690197D81E70FB7300BE288C /* FCGridColumn.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197921E70FB7300BE288C /* FCGridColumn.mm */; };
+		690197D91E70FB7300BE288C /* FCGridRow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197931E70FB7300BE288C /* FCGridRow.mm */; };
+		690197DA1E70FB7300BE288C /* FCLabel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197951E70FB7300BE288C /* FCLabel.mm */; };
+		690197DB1E70FB7300BE288C /* FCLinkLabel.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197961E70FB7300BE288C /* FCLinkLabel.mm */; };
+		690197DC1E70FB7300BE288C /* FCDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197981E70FB7300BE288C /* FCDiv.mm */; };
+		690197DD1E70FB7300BE288C /* FCGroupBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197991E70FB7300BE288C /* FCGroupBox.mm */; };
+		690197DE1E70FB7300BE288C /* FCLayoutDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901979A1E70FB7300BE288C /* FCLayoutDiv.mm */; };
+		690197DF1E70FB7300BE288C /* FCSplitLayoutDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901979B1E70FB7300BE288C /* FCSplitLayoutDiv.mm */; };
+		690197E01E70FB7300BE288C /* FCTableLayoutDiv.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901979C1E70FB7300BE288C /* FCTableLayoutDiv.mm */; };
+		690197E11E70FB7300BE288C /* FCMenu.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901979E1E70FB7300BE288C /* FCMenu.mm */; };
+		690197E21E70FB7300BE288C /* FCMenuItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6901979F1E70FB7300BE288C /* FCMenuItem.mm */; };
+		690197E31E70FB7300BE288C /* FCHScrollBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A11E70FB7300BE288C /* FCHScrollBar.mm */; };
+		690197E41E70FB7300BE288C /* FCScrollBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A21E70FB7300BE288C /* FCScrollBar.mm */; };
+		690197E51E70FB7300BE288C /* FCVScrollBar.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A31E70FB7300BE288C /* FCVScrollBar.mm */; };
+		690197E61E70FB7300BE288C /* CBase64.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A51E70FB7300BE288C /* CBase64.mm */; };
+		690197E71E70FB7300BE288C /* FCClientSocket.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A61E70FB7300BE288C /* FCClientSocket.mm */; };
+		690197E81E70FB7300BE288C /* FCClientSockets.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A71E70FB7300BE288C /* FCClientSockets.mm */; };
+		690197E91E70FB7300BE288C /* FCTabControl.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197A91E70FB7300BE288C /* FCTabControl.mm */; };
+		690197EA1E70FB7300BE288C /* FCTabPage.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197AA1E70FB7300BE288C /* FCTabPage.mm */; };
+		690197EB1E70FB7300BE288C /* FCComboBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197AC1E70FB7300BE288C /* FCComboBox.mm */; };
+		690197EC1E70FB7300BE288C /* FCSpin.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197AD1E70FB7300BE288C /* FCSpin.mm */; };
+		690197ED1E70FB7300BE288C /* FCTextBox.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197AE1E70FB7300BE288C /* FCTextBox.mm */; };
+		690197EE1E70FB7300BE288C /* FCTree.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197B01E70FB7300BE288C /* FCTree.mm */; };
+		690197EF1E70FB7300BE288C /* FCTreeNode.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197B11E70FB7300BE288C /* FCTreeNode.mm */; };
+		690197F01E70FB7300BE288C /* FCWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 690197B31E70FB7300BE288C /* FCWindow.mm */; };
+		6928DFE31FAD63D0008BC3CE /* FCBinary.mm in Sources */ = {isa = PBXBuildFile; fileRef = 6928DFE21FAD63D0008BC3CE /* FCBinary.mm */; };
+		69333EE41EFA1A4900D6B2DB /* FCToolTip.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69333EE31EFA1A4900D6B2DB /* FCToolTip.mm */; };
+		69333EE61EFA1A6300D6B2DB /* FCToolTip.h in Headers */ = {isa = PBXBuildFile; fileRef = 69333EE51EFA1A6300D6B2DB /* FCToolTip.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69333F431EFA215200D6B2DB /* FCDateTimePicker.h in Headers */ = {isa = PBXBuildFile; fileRef = 69333F421EFA215200D6B2DB /* FCDateTimePicker.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		69333F451EFA216200D6B2DB /* FCDateTimePicker.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69333F441EFA216200D6B2DB /* FCDateTimePicker.mm */; };
+		69688D391F84745C00DB5FB6 /* FCWindowFrame.mm in Sources */ = {isa = PBXBuildFile; fileRef = 69688D381F84745C00DB5FB6 /* FCWindowFrame.mm */; };
+		EA76D20D2298EFA200C29928 /* FCUIEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = EA76D20A2298EFA100C29928 /* FCUIEvent.h */; };
+		EA76D20E2298EFA200C29928 /* FCUIXml.h in Headers */ = {isa = PBXBuildFile; fileRef = EA76D20B2298EFA100C29928 /* FCUIXml.h */; };
+		EA76D20F2298EFA200C29928 /* FCUIScript.h in Headers */ = {isa = PBXBuildFile; fileRef = EA76D20C2298EFA200C29928 /* FCUIScript.h */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		690196CF1E70FAD100BE288C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 690196BB1E70FAD100BE288C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 690196C31E70FAD100BE288C;
+			remoteInfo = facecat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5F1EE5D4228A57C40081A064 /* FCBinary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBinary.h; sourceTree = "<group>"; };
+		5F31153C2282C60900EB6767 /* ContextPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContextPaint.h; sourceTree = "<group>"; };
+		5F31153E2282C61600EB6767 /* ContextPaint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ContextPaint.mm; sourceTree = "<group>"; };
+		5F39D763225EDAC500D805CC /* YearDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YearDiv.h; path = date/YearDiv.h; sourceTree = "<group>"; };
+		5F39D764225EDAC500D805CC /* DateTitle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DateTitle.h; path = date/DateTitle.h; sourceTree = "<group>"; };
+		5F39D765225EDAC500D805CC /* YearButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = YearButton.h; path = date/YearButton.h; sourceTree = "<group>"; };
+		5F39D766225EDAC500D805CC /* ArrowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ArrowButton.h; path = date/ArrowButton.h; sourceTree = "<group>"; };
+		5F39D767225EDAC500D805CC /* TimeDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TimeDiv.h; path = date/TimeDiv.h; sourceTree = "<group>"; };
+		5F39D768225EDAC500D805CC /* MonthButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonthButton.h; path = date/MonthButton.h; sourceTree = "<group>"; };
+		5F39D769225EDAC500D805CC /* DayButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayButton.h; path = date/DayButton.h; sourceTree = "<group>"; };
+		5F39D76A225EDAC500D805CC /* HeadDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HeadDiv.h; path = date/HeadDiv.h; sourceTree = "<group>"; };
+		5F39D76B225EDAC500D805CC /* CMonth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CMonth.h; path = date/CMonth.h; sourceTree = "<group>"; };
+		5F39D76C225EDAC500D805CC /* CYear.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYear.h; path = date/CYear.h; sourceTree = "<group>"; };
+		5F39D76D225EDAC600D805CC /* DayDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DayDiv.h; path = date/DayDiv.h; sourceTree = "<group>"; };
+		5F39D76E225EDAC600D805CC /* FCCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCCalendar.h; path = date/FCCalendar.h; sourceTree = "<group>"; };
+		5F39D76F225EDAC600D805CC /* CYears.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CYears.h; path = date/CYears.h; sourceTree = "<group>"; };
+		5F39D770225EDAC600D805CC /* MonthDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MonthDiv.h; path = date/MonthDiv.h; sourceTree = "<group>"; };
+		5F39D771225EDAC600D805CC /* CDay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CDay.h; path = date/CDay.h; sourceTree = "<group>"; };
+		5F39D781225EDAD300D805CC /* FCHttpPostService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCHttpPostService.h; path = service/FCHttpPostService.h; sourceTree = "<group>"; };
+		5F39D782225EDAD300D805CC /* FCClientService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCClientService.h; path = service/FCClientService.h; sourceTree = "<group>"; };
+		5F39D783225EDAD300D805CC /* FCHttpGetService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCHttpGetService.h; path = service/FCHttpGetService.h; sourceTree = "<group>"; };
+		5F39D78E225EDBA500D805CC /* MonthButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MonthButton.mm; path = date/MonthButton.mm; sourceTree = "<group>"; };
+		5F39D78F225EDBA500D805CC /* DayButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DayButton.mm; path = date/DayButton.mm; sourceTree = "<group>"; };
+		5F39D790225EDBA600D805CC /* CYears.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CYears.mm; path = date/CYears.mm; sourceTree = "<group>"; };
+		5F39D791225EDBA600D805CC /* CYear.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CYear.mm; path = date/CYear.mm; sourceTree = "<group>"; };
+		5F39D792225EDBA600D805CC /* DayDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DayDiv.mm; path = date/DayDiv.mm; sourceTree = "<group>"; };
+		5F39D793225EDBA600D805CC /* ArrowButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = ArrowButton.mm; path = date/ArrowButton.mm; sourceTree = "<group>"; };
+		5F39D794225EDBA600D805CC /* TimeDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = TimeDiv.mm; path = date/TimeDiv.mm; sourceTree = "<group>"; };
+		5F39D795225EDBA600D805CC /* MonthDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = MonthDiv.mm; path = date/MonthDiv.mm; sourceTree = "<group>"; };
+		5F39D796225EDBA600D805CC /* CDay.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CDay.mm; path = date/CDay.mm; sourceTree = "<group>"; };
+		5F39D797225EDBA600D805CC /* DateTitle.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = DateTitle.mm; path = date/DateTitle.mm; sourceTree = "<group>"; };
+		5F39D798225EDBA600D805CC /* YearDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YearDiv.mm; path = date/YearDiv.mm; sourceTree = "<group>"; };
+		5F39D799225EDBA600D805CC /* CMonth.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = CMonth.mm; path = date/CMonth.mm; sourceTree = "<group>"; };
+		5F39D79A225EDBA700D805CC /* HeadDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = HeadDiv.mm; path = date/HeadDiv.mm; sourceTree = "<group>"; };
+		5F39D79B225EDBA700D805CC /* YearButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = YearButton.mm; path = date/YearButton.mm; sourceTree = "<group>"; };
+		5F39D79C225EDBA700D805CC /* FCCalendar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FCCalendar.mm; path = date/FCCalendar.mm; sourceTree = "<group>"; };
+		5F39D7B4225EDBEB00D805CC /* FCUIEvent.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCUIEvent.mm; sourceTree = "<group>"; };
+		5F39D7B5225EDBEB00D805CC /* FCUIScript.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCUIScript.mm; sourceTree = "<group>"; };
+		5F39D7B6225EDBEB00D805CC /* FCUIXml.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCUIXml.mm; sourceTree = "<group>"; };
+		5FBF5A88225C41E8007D87B7 /* libxml2.2.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libxml2.2.tbd; path = usr/lib/libxml2.2.tbd; sourceTree = SDKROOT; };
+		5FBF5A8A225C8DEC007D87B7 /* FCFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCFile.h; sourceTree = "<group>"; };
+		5FBF5A8C225C8DF4007D87B7 /* FCFile.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCFile.mm; sourceTree = "<group>"; };
+		5FBF5A96225CC672007D87B7 /* FCHttpGetService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FCHttpGetService.mm; path = Service/FCHttpGetService.mm; sourceTree = "<group>"; };
+		5FBF5A97225CC672007D87B7 /* FCClientService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FCClientService.mm; path = Service/FCClientService.mm; sourceTree = "<group>"; };
+		5FBF5A98225CC672007D87B7 /* FCHttpPostService.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = FCHttpPostService.mm; path = Service/FCHttpPostService.mm; sourceTree = "<group>"; };
+		5FBF5A9C225CC73C007D87B7 /* FCLock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLock.h; sourceTree = "<group>"; };
+		5FBF5A9E225CC8C4007D87B7 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		690196C41E70FAD100BE288C /* facecat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = facecat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		690196C71E70FAD100BE288C /* facecat.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = facecat.h; sourceTree = "<group>"; };
+		690196C81E70FAD100BE288C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690196CD1E70FAD100BE288C /* facecatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = facecatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		690196D21E70FAD100BE288C /* facecatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = facecatTests.m; sourceTree = "<group>"; };
+		690196D41E70FAD100BE288C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		690196DE1E70FB5500BE288C /* stdafx.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = stdafx.h; sourceTree = "<group>"; };
+		690196E21E70FB6400BE288C /* FCLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLib.h; sourceTree = "<group>"; };
+		690196E41E70FB6400BE288C /* FCView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCView.h; sourceTree = "<group>"; };
+		690196E51E70FB6400BE288C /* FCHost.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHost.h; sourceTree = "<group>"; };
+		690196E61E70FB6400BE288C /* FCPaint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPaint.h; sourceTree = "<group>"; };
+		690196E71E70FB6400BE288C /* FCProperty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCProperty.h; sourceTree = "<group>"; };
+		690196E81E70FB6400BE288C /* FCStr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCStr.h; sourceTree = "<group>"; };
+		690196E91E70FB6400BE288C /* FCNative.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCNative.h; sourceTree = "<group>"; };
+		690196EB1E70FB6400BE288C /* FCButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCButton.h; sourceTree = "<group>"; };
+		690196EC1E70FB6400BE288C /* FCCheckBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCCheckBox.h; sourceTree = "<group>"; };
+		690196ED1E70FB6400BE288C /* FCRadioButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCRadioButton.h; sourceTree = "<group>"; };
+		690196EF1E70FB6400BE288C /* BaseShape.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseShape.h; sourceTree = "<group>"; };
+		690196F01E70FB6400BE288C /* ChartDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartDiv.h; sourceTree = "<group>"; };
+		690196F11E70FB6400BE288C /* FCChart.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCChart.h; sourceTree = "<group>"; };
+		690196F21E70FB6400BE288C /* FCScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCScript.h; sourceTree = "<group>"; };
+		690196F51E70FB6400BE288C /* CrossLine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLine.h; sourceTree = "<group>"; };
+		690196F61E70FB6400BE288C /* CrossLineTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CrossLineTip.h; sourceTree = "<group>"; };
+		690196F71E70FB6400BE288C /* FCDataTable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDataTable.h; sourceTree = "<group>"; };
+		690196F81E70FB6400BE288C /* ChartToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartToolTip.h; sourceTree = "<group>"; };
+		690196F91E70FB6400BE288C /* Enums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Enums.h; sourceTree = "<group>"; };
+		690196FA1E70FB6400BE288C /* HScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HScale.h; sourceTree = "<group>"; };
+		690196FB1E70FB6400BE288C /* PExtend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PExtend.h; sourceTree = "<group>"; };
+		690196FC1E70FB6400BE288C /* FCPlot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCPlot.h; sourceTree = "<group>"; };
+		690196FD1E70FB6400BE288C /* ScaleGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScaleGrid.h; sourceTree = "<group>"; };
+		690196FE1E70FB6400BE288C /* SelectArea.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectArea.h; sourceTree = "<group>"; };
+		690196FF1E70FB6400BE288C /* ChartTitleBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChartTitleBar.h; sourceTree = "<group>"; };
+		690197001E70FB6400BE288C /* VScale.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VScale.h; sourceTree = "<group>"; };
+		690197021E70FB6400BE288C /* FCBandedGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBandedGrid.h; sourceTree = "<group>"; };
+		690197031E70FB6400BE288C /* FCBandedGridColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCBandedGridColumn.h; sourceTree = "<group>"; };
+		690197041E70FB6400BE288C /* FCGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGrid.h; sourceTree = "<group>"; };
+		690197051E70FB6400BE288C /* FCGridBand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridBand.h; sourceTree = "<group>"; };
+		690197061E70FB6400BE288C /* FCGridCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridCell.h; sourceTree = "<group>"; };
+		690197071E70FB6400BE288C /* FCGridCellExtends.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridCellExtends.h; sourceTree = "<group>"; };
+		690197081E70FB6400BE288C /* FCGridColumn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridColumn.h; sourceTree = "<group>"; };
+		690197091E70FB6400BE288C /* FCGridEnums.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridEnums.h; sourceTree = "<group>"; };
+		6901970A1E70FB6400BE288C /* FCGridRow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGridRow.h; sourceTree = "<group>"; };
+		6901970C1E70FB6400BE288C /* FCLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLabel.h; sourceTree = "<group>"; };
+		6901970D1E70FB6400BE288C /* FCLinkLabel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLinkLabel.h; sourceTree = "<group>"; };
+		6901970F1E70FB6400BE288C /* FCDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDiv.h; sourceTree = "<group>"; };
+		690197101E70FB6400BE288C /* FCGroupBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCGroupBox.h; sourceTree = "<group>"; };
+		690197111E70FB6400BE288C /* FCLayoutDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCLayoutDiv.h; sourceTree = "<group>"; };
+		690197121E70FB6400BE288C /* FCSplitLayoutDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSplitLayoutDiv.h; sourceTree = "<group>"; };
+		690197131E70FB6400BE288C /* FCTableLayoutDiv.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTableLayoutDiv.h; sourceTree = "<group>"; };
+		690197151E70FB6400BE288C /* FCMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMenu.h; sourceTree = "<group>"; };
+		690197161E70FB6400BE288C /* FCMenuItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCMenuItem.h; sourceTree = "<group>"; };
+		690197181E70FB6400BE288C /* FCHScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCHScrollBar.h; sourceTree = "<group>"; };
+		690197191E70FB6400BE288C /* FCScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCScrollBar.h; sourceTree = "<group>"; };
+		6901971A1E70FB6400BE288C /* FCVScrollBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCVScrollBar.h; sourceTree = "<group>"; };
+		6901971C1E70FB6400BE288C /* CBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBase64.h; sourceTree = "<group>"; };
+		6901971D1E70FB6400BE288C /* FCClientSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCClientSocket.h; sourceTree = "<group>"; };
+		6901971E1E70FB6400BE288C /* FCClientSockets.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCClientSockets.h; sourceTree = "<group>"; };
+		690197201E70FB6400BE288C /* FCTabControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTabControl.h; sourceTree = "<group>"; };
+		690197211E70FB6400BE288C /* FCTabPage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTabPage.h; sourceTree = "<group>"; };
+		690197231E70FB6400BE288C /* FCComboBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCComboBox.h; sourceTree = "<group>"; };
+		690197241E70FB6400BE288C /* FCSpin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCSpin.h; sourceTree = "<group>"; };
+		690197251E70FB6400BE288C /* FCTextBox.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTextBox.h; sourceTree = "<group>"; };
+		690197271E70FB6400BE288C /* FCTree.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTree.h; sourceTree = "<group>"; };
+		690197281E70FB6400BE288C /* FCTreeNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCTreeNode.h; sourceTree = "<group>"; };
+		6901972A1E70FB6400BE288C /* FCWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCWindow.h; sourceTree = "<group>"; };
+		6901972B1E70FB6400BE288C /* FCWindowFrame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCWindowFrame.h; sourceTree = "<group>"; };
+		6901976D1E70FB7300BE288C /* FCView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCView.mm; sourceTree = "<group>"; };
+		6901976E1E70FB7300BE288C /* ControlHost.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ControlHost.mm; sourceTree = "<group>"; };
+		6901976F1E70FB7300BE288C /* FCPaint.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCPaint.mm; sourceTree = "<group>"; };
+		690197701E70FB7300BE288C /* FCStr.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCStr.mm; sourceTree = "<group>"; };
+		690197711E70FB7300BE288C /* FCNative.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCNative.mm; sourceTree = "<group>"; };
+		690197731E70FB7300BE288C /* FCButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCButton.mm; sourceTree = "<group>"; };
+		690197741E70FB7300BE288C /* FCCheckBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCCheckBox.mm; sourceTree = "<group>"; };
+		690197751E70FB7300BE288C /* FCRadioButton.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCRadioButton.mm; sourceTree = "<group>"; };
+		690197771E70FB7300BE288C /* BarShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BarShape.mm; sourceTree = "<group>"; };
+		690197781E70FB7300BE288C /* BaseShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = BaseShape.mm; sourceTree = "<group>"; };
+		690197791E70FB7300BE288C /* CandleShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CandleShape.mm; sourceTree = "<group>"; };
+		6901977A1E70FB7300BE288C /* ChartDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChartDiv.mm; sourceTree = "<group>"; };
+		6901977B1E70FB7300BE288C /* FCChart.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCChart.mm; sourceTree = "<group>"; };
+		6901977C1E70FB7300BE288C /* FCScript.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCScript.mm; sourceTree = "<group>"; };
+		6901977E1E70FB7300BE288C /* CrossLine.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrossLine.mm; sourceTree = "<group>"; };
+		6901977F1E70FB7300BE288C /* CrossLineTip.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CrossLineTip.mm; sourceTree = "<group>"; };
+		690197801E70FB7300BE288C /* FCDataTable.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCDataTable.mm; sourceTree = "<group>"; };
+		690197811E70FB7300BE288C /* ChartToolTip.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChartToolTip.mm; sourceTree = "<group>"; };
+		690197821E70FB7300BE288C /* HScale.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = HScale.mm; sourceTree = "<group>"; };
+		690197831E70FB7300BE288C /* PExtend.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PExtend.mm; sourceTree = "<group>"; };
+		690197841E70FB7300BE288C /* FCPlot.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCPlot.mm; sourceTree = "<group>"; };
+		690197851E70FB7300BE288C /* PolylineShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PolylineShape.mm; sourceTree = "<group>"; };
+		690197861E70FB7300BE288C /* ScaleGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ScaleGrid.mm; sourceTree = "<group>"; };
+		690197871E70FB7300BE288C /* SelectArea.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SelectArea.mm; sourceTree = "<group>"; };
+		690197881E70FB7300BE288C /* TextShape.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TextShape.mm; sourceTree = "<group>"; };
+		690197891E70FB7300BE288C /* ChartTitleBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = ChartTitleBar.mm; sourceTree = "<group>"; };
+		6901978A1E70FB7300BE288C /* VScale.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = VScale.mm; sourceTree = "<group>"; };
+		6901978C1E70FB7300BE288C /* FCBandedGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCBandedGrid.mm; sourceTree = "<group>"; };
+		6901978D1E70FB7300BE288C /* FCBandedGridColumn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCBandedGridColumn.mm; sourceTree = "<group>"; };
+		6901978E1E70FB7300BE288C /* FCGrid.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGrid.mm; sourceTree = "<group>"; };
+		6901978F1E70FB7300BE288C /* FCGridBand.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGridBand.mm; sourceTree = "<group>"; };
+		690197901E70FB7300BE288C /* FCGridCell.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGridCell.mm; sourceTree = "<group>"; };
+		690197911E70FB7300BE288C /* FCGridCellExtends.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGridCellExtends.mm; sourceTree = "<group>"; };
+		690197921E70FB7300BE288C /* FCGridColumn.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGridColumn.mm; sourceTree = "<group>"; };
+		690197931E70FB7300BE288C /* FCGridRow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGridRow.mm; sourceTree = "<group>"; };
+		690197951E70FB7300BE288C /* FCLabel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCLabel.mm; sourceTree = "<group>"; };
+		690197961E70FB7300BE288C /* FCLinkLabel.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCLinkLabel.mm; sourceTree = "<group>"; };
+		690197981E70FB7300BE288C /* FCDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCDiv.mm; sourceTree = "<group>"; };
+		690197991E70FB7300BE288C /* FCGroupBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCGroupBox.mm; sourceTree = "<group>"; };
+		6901979A1E70FB7300BE288C /* FCLayoutDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCLayoutDiv.mm; sourceTree = "<group>"; };
+		6901979B1E70FB7300BE288C /* FCSplitLayoutDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCSplitLayoutDiv.mm; sourceTree = "<group>"; };
+		6901979C1E70FB7300BE288C /* FCTableLayoutDiv.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTableLayoutDiv.mm; sourceTree = "<group>"; };
+		6901979E1E70FB7300BE288C /* FCMenu.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCMenu.mm; sourceTree = "<group>"; };
+		6901979F1E70FB7300BE288C /* FCMenuItem.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCMenuItem.mm; sourceTree = "<group>"; };
+		690197A11E70FB7300BE288C /* FCHScrollBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCHScrollBar.mm; sourceTree = "<group>"; };
+		690197A21E70FB7300BE288C /* FCScrollBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCScrollBar.mm; sourceTree = "<group>"; };
+		690197A31E70FB7300BE288C /* FCVScrollBar.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCVScrollBar.mm; sourceTree = "<group>"; };
+		690197A51E70FB7300BE288C /* CBase64.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = CBase64.mm; sourceTree = "<group>"; };
+		690197A61E70FB7300BE288C /* FCClientSocket.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCClientSocket.mm; sourceTree = "<group>"; };
+		690197A71E70FB7300BE288C /* FCClientSockets.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCClientSockets.mm; sourceTree = "<group>"; };
+		690197A91E70FB7300BE288C /* FCTabControl.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTabControl.mm; sourceTree = "<group>"; };
+		690197AA1E70FB7300BE288C /* FCTabPage.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTabPage.mm; sourceTree = "<group>"; };
+		690197AC1E70FB7300BE288C /* FCComboBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCComboBox.mm; sourceTree = "<group>"; };
+		690197AD1E70FB7300BE288C /* FCSpin.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCSpin.mm; sourceTree = "<group>"; };
+		690197AE1E70FB7300BE288C /* FCTextBox.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTextBox.mm; sourceTree = "<group>"; };
+		690197B01E70FB7300BE288C /* FCTree.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTree.mm; sourceTree = "<group>"; };
+		690197B11E70FB7300BE288C /* FCTreeNode.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCTreeNode.mm; sourceTree = "<group>"; };
+		690197B31E70FB7300BE288C /* FCWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCWindow.mm; sourceTree = "<group>"; };
+		6928DFE21FAD63D0008BC3CE /* FCBinary.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCBinary.mm; sourceTree = "<group>"; };
+		69333EE31EFA1A4900D6B2DB /* FCToolTip.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCToolTip.mm; sourceTree = "<group>"; };
+		69333EE51EFA1A6300D6B2DB /* FCToolTip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCToolTip.h; sourceTree = "<group>"; };
+		69333F421EFA215200D6B2DB /* FCDateTimePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FCDateTimePicker.h; sourceTree = "<group>"; };
+		69333F441EFA216200D6B2DB /* FCDateTimePicker.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCDateTimePicker.mm; sourceTree = "<group>"; };
+		69688D381F84745C00DB5FB6 /* FCWindowFrame.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = FCWindowFrame.mm; sourceTree = "<group>"; };
+		EA76D20A2298EFA100C29928 /* FCUIEvent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCUIEvent.h; path = facecat/include/xml/FCUIEvent.h; sourceTree = SOURCE_ROOT; };
+		EA76D20B2298EFA100C29928 /* FCUIXml.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCUIXml.h; path = facecat/include/xml/FCUIXml.h; sourceTree = SOURCE_ROOT; };
+		EA76D20C2298EFA200C29928 /* FCUIScript.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FCUIScript.h; path = facecat/include/xml/FCUIScript.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		690196C01E70FAD100BE288C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5FBF5A9F225CC8C4007D87B7 /* libz.tbd in Frameworks */,
+				5FBF5A89225C41E8007D87B7 /* libxml2.2.tbd in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		690196CA1E70FAD100BE288C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690196CE1E70FAD100BE288C /* facecat.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5F39D762225ED9AD00D805CC /* service */ = {
+			isa = PBXGroup;
+			children = (
+				5FBF5A97225CC672007D87B7 /* FCClientService.mm */,
+				5FBF5A96225CC672007D87B7 /* FCHttpGetService.mm */,
+				5FBF5A98225CC672007D87B7 /* FCHttpPostService.mm */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		5F39D7B3225EDBD800D805CC /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				5F39D7B4225EDBEB00D805CC /* FCUIEvent.mm */,
+				5F39D7B5225EDBEB00D805CC /* FCUIScript.mm */,
+				5F39D7B6225EDBEB00D805CC /* FCUIXml.mm */,
+			);
+			path = xml;
+			sourceTree = "<group>";
+		};
+		5FBF5A87225C41E7007D87B7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5FBF5A9E225CC8C4007D87B7 /* libz.tbd */,
+				5FBF5A88225C41E8007D87B7 /* libxml2.2.tbd */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5FBF5A8F225CC650007D87B7 /* service */ = {
+			isa = PBXGroup;
+			children = (
+				5F39D782225EDAD300D805CC /* FCClientService.h */,
+				5F39D783225EDAD300D805CC /* FCHttpGetService.h */,
+				5F39D781225EDAD300D805CC /* FCHttpPostService.h */,
+			);
+			name = service;
+			sourceTree = "<group>";
+		};
+		690196BA1E70FAD100BE288C = {
+			isa = PBXGroup;
+			children = (
+				690196C61E70FAD100BE288C /* facecat */,
+				690196D11E70FAD100BE288C /* facecatTests */,
+				690196C51E70FAD100BE288C /* Products */,
+				5FBF5A87225C41E7007D87B7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		690196C51E70FAD100BE288C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				690196C41E70FAD100BE288C /* facecat.framework */,
+				690196CD1E70FAD100BE288C /* facecatTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		690196C61E70FAD100BE288C /* facecat */ = {
+			isa = PBXGroup;
+			children = (
+				6901976A1E70FB7300BE288C /* source */,
+				690196E01E70FB6400BE288C /* include */,
+				690196DE1E70FB5500BE288C /* stdafx.h */,
+				690196C71E70FAD100BE288C /* facecat.h */,
+				690196C81E70FAD100BE288C /* Info.plist */,
+			);
+			path = facecat;
+			sourceTree = "<group>";
+		};
+		690196D11E70FAD100BE288C /* facecatTests */ = {
+			isa = PBXGroup;
+			children = (
+				690196D21E70FAD100BE288C /* facecatTests.m */,
+				690196D41E70FAD100BE288C /* Info.plist */,
+			);
+			path = facecatTests;
+			sourceTree = "<group>";
+		};
+		690196E01E70FB6400BE288C /* include */ = {
+			isa = PBXGroup;
+			children = (
+				EA76D2092298EF8D00C29928 /* xml */,
+				5FBF5A8F225CC650007D87B7 /* service */,
+				69333F061EFA1E2500D6B2DB /* date */,
+				690196E11E70FB6400BE288C /* core */,
+				690196EA1E70FB6400BE288C /* btn */,
+				690196EE1E70FB6400BE288C /* chart */,
+				690197011E70FB6400BE288C /* grid */,
+				6901970B1E70FB6400BE288C /* label */,
+				6901970E1E70FB6400BE288C /* div */,
+				690197171E70FB6400BE288C /* scroll */,
+				6901971B1E70FB6400BE288C /* sock */,
+				6901971F1E70FB6400BE288C /* tab */,
+				690197221E70FB6400BE288C /* input */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		690196E11E70FB6400BE288C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				5F1EE5D4228A57C40081A064 /* FCBinary.h */,
+				5F31153C2282C60900EB6767 /* ContextPaint.h */,
+				5FBF5A9C225CC73C007D87B7 /* FCLock.h */,
+				5FBF5A8A225C8DEC007D87B7 /* FCFile.h */,
+				690196E21E70FB6400BE288C /* FCLib.h */,
+				690196E41E70FB6400BE288C /* FCView.h */,
+				690196E51E70FB6400BE288C /* FCHost.h */,
+				690196E61E70FB6400BE288C /* FCPaint.h */,
+				690196E71E70FB6400BE288C /* FCProperty.h */,
+				690196E81E70FB6400BE288C /* FCStr.h */,
+				690196E91E70FB6400BE288C /* FCNative.h */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		690196EA1E70FB6400BE288C /* btn */ = {
+			isa = PBXGroup;
+			children = (
+				690196EB1E70FB6400BE288C /* FCButton.h */,
+				690196EC1E70FB6400BE288C /* FCCheckBox.h */,
+				690196ED1E70FB6400BE288C /* FCRadioButton.h */,
+			);
+			path = btn;
+			sourceTree = "<group>";
+		};
+		690196EE1E70FB6400BE288C /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				690196EF1E70FB6400BE288C /* BaseShape.h */,
+				690196F01E70FB6400BE288C /* ChartDiv.h */,
+				690196F11E70FB6400BE288C /* FCChart.h */,
+				690196F21E70FB6400BE288C /* FCScript.h */,
+				690196F51E70FB6400BE288C /* CrossLine.h */,
+				690196F61E70FB6400BE288C /* CrossLineTip.h */,
+				690196F71E70FB6400BE288C /* FCDataTable.h */,
+				690196F81E70FB6400BE288C /* ChartToolTip.h */,
+				690196F91E70FB6400BE288C /* Enums.h */,
+				690196FA1E70FB6400BE288C /* HScale.h */,
+				690196FB1E70FB6400BE288C /* PExtend.h */,
+				690196FC1E70FB6400BE288C /* FCPlot.h */,
+				690196FD1E70FB6400BE288C /* ScaleGrid.h */,
+				690196FE1E70FB6400BE288C /* SelectArea.h */,
+				690196FF1E70FB6400BE288C /* ChartTitleBar.h */,
+				690197001E70FB6400BE288C /* VScale.h */,
+			);
+			path = chart;
+			sourceTree = "<group>";
+		};
+		690197011E70FB6400BE288C /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				690197271E70FB6400BE288C /* FCTree.h */,
+				690197281E70FB6400BE288C /* FCTreeNode.h */,
+				690197021E70FB6400BE288C /* FCBandedGrid.h */,
+				690197031E70FB6400BE288C /* FCBandedGridColumn.h */,
+				690197041E70FB6400BE288C /* FCGrid.h */,
+				690197051E70FB6400BE288C /* FCGridBand.h */,
+				690197061E70FB6400BE288C /* FCGridCell.h */,
+				690197071E70FB6400BE288C /* FCGridCellExtends.h */,
+				690197081E70FB6400BE288C /* FCGridColumn.h */,
+				690197091E70FB6400BE288C /* FCGridEnums.h */,
+				6901970A1E70FB6400BE288C /* FCGridRow.h */,
+			);
+			path = grid;
+			sourceTree = "<group>";
+		};
+		6901970B1E70FB6400BE288C /* label */ = {
+			isa = PBXGroup;
+			children = (
+				6901970C1E70FB6400BE288C /* FCLabel.h */,
+				6901970D1E70FB6400BE288C /* FCLinkLabel.h */,
+			);
+			path = label;
+			sourceTree = "<group>";
+		};
+		6901970E1E70FB6400BE288C /* div */ = {
+			isa = PBXGroup;
+			children = (
+				690197151E70FB6400BE288C /* FCMenu.h */,
+				690197161E70FB6400BE288C /* FCMenuItem.h */,
+				69333EE51EFA1A6300D6B2DB /* FCToolTip.h */,
+				6901972A1E70FB6400BE288C /* FCWindow.h */,
+				6901972B1E70FB6400BE288C /* FCWindowFrame.h */,
+				6901970F1E70FB6400BE288C /* FCDiv.h */,
+				690197101E70FB6400BE288C /* FCGroupBox.h */,
+				690197111E70FB6400BE288C /* FCLayoutDiv.h */,
+				690197121E70FB6400BE288C /* FCSplitLayoutDiv.h */,
+				690197131E70FB6400BE288C /* FCTableLayoutDiv.h */,
+			);
+			path = div;
+			sourceTree = "<group>";
+		};
+		690197171E70FB6400BE288C /* scroll */ = {
+			isa = PBXGroup;
+			children = (
+				690197181E70FB6400BE288C /* FCHScrollBar.h */,
+				690197191E70FB6400BE288C /* FCScrollBar.h */,
+				6901971A1E70FB6400BE288C /* FCVScrollBar.h */,
+			);
+			path = scroll;
+			sourceTree = "<group>";
+		};
+		6901971B1E70FB6400BE288C /* sock */ = {
+			isa = PBXGroup;
+			children = (
+				6901971C1E70FB6400BE288C /* CBase64.h */,
+				6901971D1E70FB6400BE288C /* FCClientSocket.h */,
+				6901971E1E70FB6400BE288C /* FCClientSockets.h */,
+			);
+			path = sock;
+			sourceTree = "<group>";
+		};
+		6901971F1E70FB6400BE288C /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				690197201E70FB6400BE288C /* FCTabControl.h */,
+				690197211E70FB6400BE288C /* FCTabPage.h */,
+			);
+			path = tab;
+			sourceTree = "<group>";
+		};
+		690197221E70FB6400BE288C /* input */ = {
+			isa = PBXGroup;
+			children = (
+				69333F421EFA215200D6B2DB /* FCDateTimePicker.h */,
+				690197231E70FB6400BE288C /* FCComboBox.h */,
+				690197241E70FB6400BE288C /* FCSpin.h */,
+				690197251E70FB6400BE288C /* FCTextBox.h */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		6901976A1E70FB7300BE288C /* source */ = {
+			isa = PBXGroup;
+			children = (
+				5F39D7B3225EDBD800D805CC /* xml */,
+				5F39D762225ED9AD00D805CC /* service */,
+				69333EE71EFA1E1400D6B2DB /* date */,
+				6901976B1E70FB7300BE288C /* core */,
+				690197721E70FB7300BE288C /* btn */,
+				690197761E70FB7300BE288C /* chart */,
+				6901978B1E70FB7300BE288C /* grid */,
+				690197941E70FB7300BE288C /* label */,
+				690197971E70FB7300BE288C /* div */,
+				690197A01E70FB7300BE288C /* scroll */,
+				690197A41E70FB7300BE288C /* sock */,
+				690197A81E70FB7300BE288C /* tab */,
+				690197AB1E70FB7300BE288C /* input */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		6901976B1E70FB7300BE288C /* core */ = {
+			isa = PBXGroup;
+			children = (
+				5F31153E2282C61600EB6767 /* ContextPaint.mm */,
+				5FBF5A8C225C8DF4007D87B7 /* FCFile.mm */,
+				6928DFE21FAD63D0008BC3CE /* FCBinary.mm */,
+				6901976D1E70FB7300BE288C /* FCView.mm */,
+				6901976E1E70FB7300BE288C /* ControlHost.mm */,
+				6901976F1E70FB7300BE288C /* FCPaint.mm */,
+				690197701E70FB7300BE288C /* FCStr.mm */,
+				690197711E70FB7300BE288C /* FCNative.mm */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		690197721E70FB7300BE288C /* btn */ = {
+			isa = PBXGroup;
+			children = (
+				690197731E70FB7300BE288C /* FCButton.mm */,
+				690197741E70FB7300BE288C /* FCCheckBox.mm */,
+				690197751E70FB7300BE288C /* FCRadioButton.mm */,
+			);
+			path = btn;
+			sourceTree = "<group>";
+		};
+		690197761E70FB7300BE288C /* chart */ = {
+			isa = PBXGroup;
+			children = (
+				690197771E70FB7300BE288C /* BarShape.mm */,
+				690197781E70FB7300BE288C /* BaseShape.mm */,
+				690197791E70FB7300BE288C /* CandleShape.mm */,
+				6901977A1E70FB7300BE288C /* ChartDiv.mm */,
+				6901977B1E70FB7300BE288C /* FCChart.mm */,
+				6901977C1E70FB7300BE288C /* FCScript.mm */,
+				6901977E1E70FB7300BE288C /* CrossLine.mm */,
+				6901977F1E70FB7300BE288C /* CrossLineTip.mm */,
+				690197801E70FB7300BE288C /* FCDataTable.mm */,
+				690197811E70FB7300BE288C /* ChartToolTip.mm */,
+				690197821E70FB7300BE288C /* HScale.mm */,
+				690197831E70FB7300BE288C /* PExtend.mm */,
+				690197841E70FB7300BE288C /* FCPlot.mm */,
+				690197851E70FB7300BE288C /* PolylineShape.mm */,
+				690197861E70FB7300BE288C /* ScaleGrid.mm */,
+				690197871E70FB7300BE288C /* SelectArea.mm */,
+				690197881E70FB7300BE288C /* TextShape.mm */,
+				690197891E70FB7300BE288C /* ChartTitleBar.mm */,
+				6901978A1E70FB7300BE288C /* VScale.mm */,
+			);
+			path = chart;
+			sourceTree = "<group>";
+		};
+		6901978B1E70FB7300BE288C /* grid */ = {
+			isa = PBXGroup;
+			children = (
+				690197B01E70FB7300BE288C /* FCTree.mm */,
+				690197B11E70FB7300BE288C /* FCTreeNode.mm */,
+				6901978C1E70FB7300BE288C /* FCBandedGrid.mm */,
+				6901978D1E70FB7300BE288C /* FCBandedGridColumn.mm */,
+				6901978E1E70FB7300BE288C /* FCGrid.mm */,
+				6901978F1E70FB7300BE288C /* FCGridBand.mm */,
+				690197901E70FB7300BE288C /* FCGridCell.mm */,
+				690197911E70FB7300BE288C /* FCGridCellExtends.mm */,
+				690197921E70FB7300BE288C /* FCGridColumn.mm */,
+				690197931E70FB7300BE288C /* FCGridRow.mm */,
+			);
+			path = grid;
+			sourceTree = "<group>";
+		};
+		690197941E70FB7300BE288C /* label */ = {
+			isa = PBXGroup;
+			children = (
+				690197951E70FB7300BE288C /* FCLabel.mm */,
+				690197961E70FB7300BE288C /* FCLinkLabel.mm */,
+			);
+			path = label;
+			sourceTree = "<group>";
+		};
+		690197971E70FB7300BE288C /* div */ = {
+			isa = PBXGroup;
+			children = (
+				69333EE31EFA1A4900D6B2DB /* FCToolTip.mm */,
+				6901979E1E70FB7300BE288C /* FCMenu.mm */,
+				6901979F1E70FB7300BE288C /* FCMenuItem.mm */,
+				69688D381F84745C00DB5FB6 /* FCWindowFrame.mm */,
+				690197B31E70FB7300BE288C /* FCWindow.mm */,
+				690197981E70FB7300BE288C /* FCDiv.mm */,
+				690197991E70FB7300BE288C /* FCGroupBox.mm */,
+				6901979A1E70FB7300BE288C /* FCLayoutDiv.mm */,
+				6901979B1E70FB7300BE288C /* FCSplitLayoutDiv.mm */,
+				6901979C1E70FB7300BE288C /* FCTableLayoutDiv.mm */,
+			);
+			path = div;
+			sourceTree = "<group>";
+		};
+		690197A01E70FB7300BE288C /* scroll */ = {
+			isa = PBXGroup;
+			children = (
+				690197A11E70FB7300BE288C /* FCHScrollBar.mm */,
+				690197A21E70FB7300BE288C /* FCScrollBar.mm */,
+				690197A31E70FB7300BE288C /* FCVScrollBar.mm */,
+			);
+			path = scroll;
+			sourceTree = "<group>";
+		};
+		690197A41E70FB7300BE288C /* sock */ = {
+			isa = PBXGroup;
+			children = (
+				690197A51E70FB7300BE288C /* CBase64.mm */,
+				690197A61E70FB7300BE288C /* FCClientSocket.mm */,
+				690197A71E70FB7300BE288C /* FCClientSockets.mm */,
+			);
+			path = sock;
+			sourceTree = "<group>";
+		};
+		690197A81E70FB7300BE288C /* tab */ = {
+			isa = PBXGroup;
+			children = (
+				690197A91E70FB7300BE288C /* FCTabControl.mm */,
+				690197AA1E70FB7300BE288C /* FCTabPage.mm */,
+			);
+			path = tab;
+			sourceTree = "<group>";
+		};
+		690197AB1E70FB7300BE288C /* input */ = {
+			isa = PBXGroup;
+			children = (
+				69333F441EFA216200D6B2DB /* FCDateTimePicker.mm */,
+				690197AC1E70FB7300BE288C /* FCComboBox.mm */,
+				690197AD1E70FB7300BE288C /* FCSpin.mm */,
+				690197AE1E70FB7300BE288C /* FCTextBox.mm */,
+			);
+			path = input;
+			sourceTree = "<group>";
+		};
+		69333EE71EFA1E1400D6B2DB /* date */ = {
+			isa = PBXGroup;
+			children = (
+				5F39D793225EDBA600D805CC /* ArrowButton.mm */,
+				5F39D796225EDBA600D805CC /* CDay.mm */,
+				5F39D799225EDBA600D805CC /* CMonth.mm */,
+				5F39D791225EDBA600D805CC /* CYear.mm */,
+				5F39D790225EDBA600D805CC /* CYears.mm */,
+				5F39D797225EDBA600D805CC /* DateTitle.mm */,
+				5F39D78F225EDBA500D805CC /* DayButton.mm */,
+				5F39D792225EDBA600D805CC /* DayDiv.mm */,
+				5F39D79C225EDBA700D805CC /* FCCalendar.mm */,
+				5F39D79A225EDBA700D805CC /* HeadDiv.mm */,
+				5F39D78E225EDBA500D805CC /* MonthButton.mm */,
+				5F39D795225EDBA600D805CC /* MonthDiv.mm */,
+				5F39D794225EDBA600D805CC /* TimeDiv.mm */,
+				5F39D79B225EDBA700D805CC /* YearButton.mm */,
+				5F39D798225EDBA600D805CC /* YearDiv.mm */,
+			);
+			name = date;
+			sourceTree = "<group>";
+		};
+		69333F061EFA1E2500D6B2DB /* date */ = {
+			isa = PBXGroup;
+			children = (
+				5F39D766225EDAC500D805CC /* ArrowButton.h */,
+				5F39D771225EDAC600D805CC /* CDay.h */,
+				5F39D76B225EDAC500D805CC /* CMonth.h */,
+				5F39D76C225EDAC500D805CC /* CYear.h */,
+				5F39D76F225EDAC600D805CC /* CYears.h */,
+				5F39D764225EDAC500D805CC /* DateTitle.h */,
+				5F39D769225EDAC500D805CC /* DayButton.h */,
+				5F39D76D225EDAC600D805CC /* DayDiv.h */,
+				5F39D76E225EDAC600D805CC /* FCCalendar.h */,
+				5F39D76A225EDAC500D805CC /* HeadDiv.h */,
+				5F39D768225EDAC500D805CC /* MonthButton.h */,
+				5F39D770225EDAC600D805CC /* MonthDiv.h */,
+				5F39D767225EDAC500D805CC /* TimeDiv.h */,
+				5F39D765225EDAC500D805CC /* YearButton.h */,
+				5F39D763225EDAC500D805CC /* YearDiv.h */,
+			);
+			name = date;
+			sourceTree = "<group>";
+		};
+		EA76D2092298EF8D00C29928 /* xml */ = {
+			isa = PBXGroup;
+			children = (
+				EA76D20A2298EFA100C29928 /* FCUIEvent.h */,
+				EA76D20C2298EFA200C29928 /* FCUIScript.h */,
+				EA76D20B2298EFA100C29928 /* FCUIXml.h */,
+			);
+			name = xml;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		690196C11E70FAD100BE288C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690197381E70FB6400BE288C /* ChartDiv.h in Headers */,
+				690197591E70FB6400BE288C /* FCMenu.h in Headers */,
+				690197471E70FB6400BE288C /* ChartTitleBar.h in Headers */,
+				6901972E1E70FB6400BE288C /* FCView.h in Headers */,
+				690197311E70FB6400BE288C /* FCProperty.h in Headers */,
+				690197561E70FB6400BE288C /* FCLayoutDiv.h in Headers */,
+				690197691E70FB6400BE288C /* FCWindowFrame.h in Headers */,
+				6901974B1E70FB6400BE288C /* FCGrid.h in Headers */,
+				6901973D1E70FB6400BE288C /* CrossLine.h in Headers */,
+				690197521E70FB6400BE288C /* FCLabel.h in Headers */,
+				5F1EE5D5228A57C40081A064 /* FCBinary.h in Headers */,
+				690197491E70FB6400BE288C /* FCBandedGrid.h in Headers */,
+				690197501E70FB6400BE288C /* FCGridEnums.h in Headers */,
+				690197541E70FB6400BE288C /* FCDiv.h in Headers */,
+				6901974C1E70FB6400BE288C /* FCGridBand.h in Headers */,
+				690197671E70FB6400BE288C /* FCTreeNode.h in Headers */,
+				690197321E70FB6400BE288C /* FCStr.h in Headers */,
+				6901972F1E70FB6400BE288C /* FCHost.h in Headers */,
+				690197611E70FB6400BE288C /* FCTabControl.h in Headers */,
+				690197531E70FB6400BE288C /* FCLinkLabel.h in Headers */,
+				6901973E1E70FB6400BE288C /* CrossLineTip.h in Headers */,
+				690197511E70FB6400BE288C /* FCGridRow.h in Headers */,
+				690197651E70FB6400BE288C /* FCTextBox.h in Headers */,
+				690197661E70FB6400BE288C /* FCTree.h in Headers */,
+				690197571E70FB6400BE288C /* FCSplitLayoutDiv.h in Headers */,
+				6901974E1E70FB6400BE288C /* FCGridCellExtends.h in Headers */,
+				690197361E70FB6400BE288C /* FCRadioButton.h in Headers */,
+				6901975A1E70FB6400BE288C /* FCMenuItem.h in Headers */,
+				6901972C1E70FB6400BE288C /* FCLib.h in Headers */,
+				6901974A1E70FB6400BE288C /* FCBandedGridColumn.h in Headers */,
+				6901975C1E70FB6400BE288C /* FCScrollBar.h in Headers */,
+				690197551E70FB6400BE288C /* FCGroupBox.h in Headers */,
+				690197371E70FB6400BE288C /* BaseShape.h in Headers */,
+				690197621E70FB6400BE288C /* FCTabPage.h in Headers */,
+				6901973A1E70FB6400BE288C /* FCScript.h in Headers */,
+				EA76D20E2298EFA200C29928 /* FCUIXml.h in Headers */,
+				690197401E70FB6400BE288C /* ChartToolTip.h in Headers */,
+				6901974F1E70FB6400BE288C /* FCGridColumn.h in Headers */,
+				6901975D1E70FB6400BE288C /* FCVScrollBar.h in Headers */,
+				690197331E70FB6400BE288C /* FCNative.h in Headers */,
+				690197431E70FB6400BE288C /* PExtend.h in Headers */,
+				690197581E70FB6400BE288C /* FCTableLayoutDiv.h in Headers */,
+				6901975B1E70FB6400BE288C /* FCHScrollBar.h in Headers */,
+				690197301E70FB6400BE288C /* FCPaint.h in Headers */,
+				6901973F1E70FB6400BE288C /* FCDataTable.h in Headers */,
+				5F39D785225EDAD300D805CC /* FCClientService.h in Headers */,
+				5F39D773225EDAC600D805CC /* DateTitle.h in Headers */,
+				5FBF5A8B225C8DEC007D87B7 /* FCFile.h in Headers */,
+				5F39D77C225EDAC600D805CC /* DayDiv.h in Headers */,
+				5F39D784225EDAD300D805CC /* FCHttpPostService.h in Headers */,
+				5F39D77D225EDAC600D805CC /* FCCalendar.h in Headers */,
+				5F39D77F225EDAC600D805CC /* MonthDiv.h in Headers */,
+				5F39D776225EDAC600D805CC /* TimeDiv.h in Headers */,
+				5FBF5A9D225CC73C007D87B7 /* FCLock.h in Headers */,
+				EA76D20F2298EFA200C29928 /* FCUIScript.h in Headers */,
+				5F39D772225EDAC600D805CC /* YearDiv.h in Headers */,
+				5F39D786225EDAD300D805CC /* FCHttpGetService.h in Headers */,
+				5F39D77A225EDAC600D805CC /* CMonth.h in Headers */,
+				5F39D77B225EDAC600D805CC /* CYear.h in Headers */,
+				5F39D775225EDAC600D805CC /* ArrowButton.h in Headers */,
+				5F39D777225EDAC600D805CC /* MonthButton.h in Headers */,
+				5F39D780225EDAC600D805CC /* CDay.h in Headers */,
+				5F39D778225EDAC600D805CC /* DayButton.h in Headers */,
+				5F39D779225EDAC600D805CC /* HeadDiv.h in Headers */,
+				5F39D77E225EDAC600D805CC /* CYears.h in Headers */,
+				5F39D774225EDAC600D805CC /* YearButton.h in Headers */,
+				5F31153D2282C60900EB6767 /* ContextPaint.h in Headers */,
+				69333EE61EFA1A6300D6B2DB /* FCToolTip.h in Headers */,
+				690196DF1E70FB5500BE288C /* stdafx.h in Headers */,
+				69333F431EFA215200D6B2DB /* FCDateTimePicker.h in Headers */,
+				690197341E70FB6400BE288C /* FCButton.h in Headers */,
+				690197641E70FB6400BE288C /* FCSpin.h in Headers */,
+				6901975F1E70FB6400BE288C /* FCClientSocket.h in Headers */,
+				690197441E70FB6400BE288C /* FCPlot.h in Headers */,
+				690197411E70FB6400BE288C /* Enums.h in Headers */,
+				690197421E70FB6400BE288C /* HScale.h in Headers */,
+				690197681E70FB6400BE288C /* FCWindow.h in Headers */,
+				6901974D1E70FB6400BE288C /* FCGridCell.h in Headers */,
+				EA76D20D2298EFA200C29928 /* FCUIEvent.h in Headers */,
+				690197481E70FB6400BE288C /* VScale.h in Headers */,
+				690197461E70FB6400BE288C /* SelectArea.h in Headers */,
+				690197351E70FB6400BE288C /* FCCheckBox.h in Headers */,
+				690197631E70FB6400BE288C /* FCComboBox.h in Headers */,
+				690197391E70FB6400BE288C /* FCChart.h in Headers */,
+				690197601E70FB6400BE288C /* FCClientSockets.h in Headers */,
+				6901975E1E70FB6400BE288C /* CBase64.h in Headers */,
+				690197451E70FB6400BE288C /* ScaleGrid.h in Headers */,
+				690196D51E70FAD100BE288C /* facecat.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		690196C31E70FAD100BE288C /* facecat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690196D81E70FAD100BE288C /* Build configuration list for PBXNativeTarget "facecat" */;
+			buildPhases = (
+				690196BF1E70FAD100BE288C /* Sources */,
+				690196C01E70FAD100BE288C /* Frameworks */,
+				690196C11E70FAD100BE288C /* Headers */,
+				690196C21E70FAD100BE288C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = facecat;
+			productName = facecat;
+			productReference = 690196C41E70FAD100BE288C /* facecat.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		690196CC1E70FAD100BE288C /* facecatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 690196DB1E70FAD100BE288C /* Build configuration list for PBXNativeTarget "facecatTests" */;
+			buildPhases = (
+				690196C91E70FAD100BE288C /* Sources */,
+				690196CA1E70FAD100BE288C /* Frameworks */,
+				690196CB1E70FAD100BE288C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				690196D01E70FAD100BE288C /* PBXTargetDependency */,
+			);
+			name = facecatTests;
+			productName = facecatTests;
+			productReference = 690196CD1E70FAD100BE288C /* facecatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		690196BB1E70FAD100BE288C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "GAIA-Todd";
+				TargetAttributes = {
+					690196C31E70FAD100BE288C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+					690196CC1E70FAD100BE288C = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 690196BE1E70FAD100BE288C /* Build configuration list for PBXProject "facecat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 690196BA1E70FAD100BE288C;
+			productRefGroup = 690196C51E70FAD100BE288C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				690196C31E70FAD100BE288C /* facecat */,
+				690196CC1E70FAD100BE288C /* facecatTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		690196C21E70FAD100BE288C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		690196CB1E70FAD100BE288C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		690196BF1E70FAD100BE288C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690197ED1E70FB7300BE288C /* FCTextBox.mm in Sources */,
+				690197C21E70FB7300BE288C /* FCChart.mm in Sources */,
+				690197DD1E70FB7300BE288C /* FCGroupBox.mm in Sources */,
+				5F39D7B7225EDBEB00D805CC /* FCUIEvent.mm in Sources */,
+				5F39D7AA225EDBA700D805CC /* YearButton.mm in Sources */,
+				690197C51E70FB7300BE288C /* CrossLine.mm in Sources */,
+				5F39D7A6225EDBA700D805CC /* DateTitle.mm in Sources */,
+				690197BD1E70FB7300BE288C /* FCRadioButton.mm in Sources */,
+				690197DB1E70FB7300BE288C /* FCLinkLabel.mm in Sources */,
+				690197B81E70FB7300BE288C /* FCPaint.mm in Sources */,
+				690197CC1E70FB7300BE288C /* PolylineShape.mm in Sources */,
+				690197F01E70FB7300BE288C /* FCWindow.mm in Sources */,
+				690197DA1E70FB7300BE288C /* FCLabel.mm in Sources */,
+				690197EB1E70FB7300BE288C /* FCComboBox.mm in Sources */,
+				690197BF1E70FB7300BE288C /* BaseShape.mm in Sources */,
+				690197D61E70FB7300BE288C /* FCGridCell.mm in Sources */,
+				690197E21E70FB7300BE288C /* FCMenuItem.mm in Sources */,
+				690197D21E70FB7300BE288C /* FCBandedGrid.mm in Sources */,
+				690197D81E70FB7300BE288C /* FCGridColumn.mm in Sources */,
+				69333EE41EFA1A4900D6B2DB /* FCToolTip.mm in Sources */,
+				690197E01E70FB7300BE288C /* FCTableLayoutDiv.mm in Sources */,
+				5FBF5A99225CC672007D87B7 /* FCHttpGetService.mm in Sources */,
+				5FBF5A9B225CC672007D87B7 /* FCHttpPostService.mm in Sources */,
+				690197BE1E70FB7300BE288C /* BarShape.mm in Sources */,
+				5F39D7A7225EDBA700D805CC /* YearDiv.mm in Sources */,
+				5F39D7A2225EDBA700D805CC /* ArrowButton.mm in Sources */,
+				690197BC1E70FB7300BE288C /* FCCheckBox.mm in Sources */,
+				690197D01E70FB7300BE288C /* ChartTitleBar.mm in Sources */,
+				690197E11E70FB7300BE288C /* FCMenu.mm in Sources */,
+				690197C11E70FB7300BE288C /* ChartDiv.mm in Sources */,
+				690197C01E70FB7300BE288C /* CandleShape.mm in Sources */,
+				690197D71E70FB7300BE288C /* FCGridCellExtends.mm in Sources */,
+				690197EF1E70FB7300BE288C /* FCTreeNode.mm in Sources */,
+				690197B91E70FB7300BE288C /* FCStr.mm in Sources */,
+				690197EC1E70FB7300BE288C /* FCSpin.mm in Sources */,
+				69688D391F84745C00DB5FB6 /* FCWindowFrame.mm in Sources */,
+				5F39D79F225EDBA700D805CC /* CYears.mm in Sources */,
+				5F39D79E225EDBA700D805CC /* DayButton.mm in Sources */,
+				690197BA1E70FB7300BE288C /* FCNative.mm in Sources */,
+				690197E51E70FB7300BE288C /* FCVScrollBar.mm in Sources */,
+				5F39D7AB225EDBA700D805CC /* FCCalendar.mm in Sources */,
+				690197BB1E70FB7300BE288C /* FCButton.mm in Sources */,
+				690197DE1E70FB7300BE288C /* FCLayoutDiv.mm in Sources */,
+				5F39D7A8225EDBA700D805CC /* CMonth.mm in Sources */,
+				690197D31E70FB7300BE288C /* FCBandedGridColumn.mm in Sources */,
+				5F39D7A9225EDBA700D805CC /* HeadDiv.mm in Sources */,
+				690197E31E70FB7300BE288C /* FCHScrollBar.mm in Sources */,
+				5F39D7A1225EDBA700D805CC /* DayDiv.mm in Sources */,
+				690197EA1E70FB7300BE288C /* FCTabPage.mm in Sources */,
+				5FBF5A8D225C8DF4007D87B7 /* FCFile.mm in Sources */,
+				5FBF5A9A225CC672007D87B7 /* FCClientService.mm in Sources */,
+				690197E61E70FB7300BE288C /* CBase64.mm in Sources */,
+				690197D91E70FB7300BE288C /* FCGridRow.mm in Sources */,
+				690197CB1E70FB7300BE288C /* FCPlot.mm in Sources */,
+				690197DC1E70FB7300BE288C /* FCDiv.mm in Sources */,
+				5F31153F2282C61600EB6767 /* ContextPaint.mm in Sources */,
+				690197C61E70FB7300BE288C /* CrossLineTip.mm in Sources */,
+				690197EE1E70FB7300BE288C /* FCTree.mm in Sources */,
+				6928DFE31FAD63D0008BC3CE /* FCBinary.mm in Sources */,
+				690197D51E70FB7300BE288C /* FCGridBand.mm in Sources */,
+				690197CD1E70FB7300BE288C /* ScaleGrid.mm in Sources */,
+				690197D41E70FB7300BE288C /* FCGrid.mm in Sources */,
+				5F39D79D225EDBA700D805CC /* MonthButton.mm in Sources */,
+				690197B71E70FB7300BE288C /* ControlHost.mm in Sources */,
+				69333F451EFA216200D6B2DB /* FCDateTimePicker.mm in Sources */,
+				690197CF1E70FB7300BE288C /* TextShape.mm in Sources */,
+				690197CA1E70FB7300BE288C /* PExtend.mm in Sources */,
+				5F39D7B9225EDBEB00D805CC /* FCUIXml.mm in Sources */,
+				690197DF1E70FB7300BE288C /* FCSplitLayoutDiv.mm in Sources */,
+				690197E41E70FB7300BE288C /* FCScrollBar.mm in Sources */,
+				690197CE1E70FB7300BE288C /* SelectArea.mm in Sources */,
+				690197E81E70FB7300BE288C /* FCClientSockets.mm in Sources */,
+				5F39D7A4225EDBA700D805CC /* MonthDiv.mm in Sources */,
+				5F39D7A0225EDBA700D805CC /* CYear.mm in Sources */,
+				690197D11E70FB7300BE288C /* VScale.mm in Sources */,
+				5F39D7A3225EDBA700D805CC /* TimeDiv.mm in Sources */,
+				690197C71E70FB7300BE288C /* FCDataTable.mm in Sources */,
+				690197E71E70FB7300BE288C /* FCClientSocket.mm in Sources */,
+				5F39D7A5225EDBA700D805CC /* CDay.mm in Sources */,
+				690197C81E70FB7300BE288C /* ChartToolTip.mm in Sources */,
+				690197E91E70FB7300BE288C /* FCTabControl.mm in Sources */,
+				5F39D7B8225EDBEB00D805CC /* FCUIScript.mm in Sources */,
+				690197C91E70FB7300BE288C /* HScale.mm in Sources */,
+				690197B61E70FB7300BE288C /* FCView.mm in Sources */,
+				690197C31E70FB7300BE288C /* FCScript.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		690196C91E70FAD100BE288C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				690196D31E70FAD100BE288C /* facecatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		690196D01E70FAD100BE288C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 690196C31E70FAD100BE288C /* facecat */;
+			targetProxy = 690196CF1E70FAD100BE288C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		690196D61E70FAD100BE288C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		690196D71E70FAD100BE288C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		690196D91E70FAD100BE288C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = facecat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = facecat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		690196DA1E70FAD100BE288C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "c++0x";
+				CODE_SIGN_IDENTITY = "";
+				DEAD_CODE_STRIPPING = NO;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = "${SDK_ROOT}/usr/include/libxml2";
+				INFOPLIST_FILE = facecat/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LINK_WITH_STANDARD_LIBRARIES = NO;
+				MACH_O_TYPE = staticlib;
+				PRODUCT_BUNDLE_IDENTIFIER = facecat;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		690196DC1E70FAD100BE288C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = facecatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facecat.facecatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		690196DD1E70FAD100BE288C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = facecatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = facecat.facecatTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		690196BE1E70FAD100BE288C /* Build configuration list for PBXProject "facecat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690196D61E70FAD100BE288C /* Debug */,
+				690196D71E70FAD100BE288C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690196D81E70FAD100BE288C /* Build configuration list for PBXNativeTarget "facecat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690196D91E70FAD100BE288C /* Debug */,
+				690196DA1E70FAD100BE288C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		690196DB1E70FAD100BE288C /* Build configuration list for PBXNativeTarget "facecatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				690196DC1E70FAD100BE288C /* Debug */,
+				690196DD1E70FAD100BE288C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 690196BB1E70FAD100BE288C /* Project object */;
+}

@@ -1,0 +1,188 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{413B2326-8534-4D40-9A29-B4262FE8FF55}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>facecat</RootNamespace>
+    <AssemblyName>facecat_net</AssemblyName>
+    <SignAssembly>false</SignAssembly>
+    <AssemblyOriginatorKeyFile>
+    </AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>x86</PlatformTarget>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <RegisterForComInterop>false</RegisterForComInterop>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="core\FCFile.cs" />
+    <Compile Include="core\FCBinary.cs" />
+    <Compile Include="core\FCHost.cs" />
+    <Compile Include="core\FCProperty.cs" />
+    <Compile Include="core\FCPaint.cs" />
+    <Compile Include="core\GdiPaint.cs" />
+    <Compile Include="core\GdiPlusPaint.cs" />
+    <Compile Include="core\FCStr.cs" />
+    <Compile Include="core\WinHost.cs" />
+    <Compile Include="btn\FCButton.cs" />
+    <Compile Include="btn\FCCheckBox.cs" />
+    <Compile Include="btn\FCRadioButton.cs" />
+    <Compile Include="date\ArrowButton.cs" />
+    <Compile Include="date\CYears.cs" />
+    <Compile Include="date\CDay.cs" />
+    <Compile Include="date\CMonth.cs" />
+    <Compile Include="date\CYear.cs" />
+    <Compile Include="date\DateTitle.cs" />
+    <Compile Include="date\DayButton.cs" />
+    <Compile Include="date\DayDiv.cs" />
+    <Compile Include="date\HeadDiv.cs" />
+    <Compile Include="date\FCCalendar.cs" />
+    <Compile Include="date\MonthButton.cs" />
+    <Compile Include="date\MonthDiv.cs" />
+    <Compile Include="date\TimeDiv.cs" />
+    <Compile Include="date\YearButton.cs" />
+    <Compile Include="date\YearDiv.cs" />
+    <Compile Include="chart\FCChart.cs" />
+    <Compile Include="chart\CList.cs" />
+    <Compile Include="chart\Enums.cs" />
+    <Compile Include="core\FCView.cs" />
+    <Compile Include="chart\TextShape.cs" />
+    <Compile Include="chart\FCScript.cs" />
+    <Compile Include="chart\FCDataTable.cs" />
+    <Compile Include="chart\PExtend.cs" />
+    <Compile Include="chart\FCPlot.cs" />
+    <Compile Include="grid\FCBandedGrid.cs" />
+    <Compile Include="grid\FCBandedGridColumn.cs" />
+    <Compile Include="grid\FCGridBand.cs" />
+    <Compile Include="grid\FCGridCell.cs" />
+    <Compile Include="grid\FCGridCellExtends.cs" />
+    <Compile Include="grid\FCGridColumn.cs" />
+    <Compile Include="grid\FCGridEnums.cs" />
+    <Compile Include="grid\FCGridRow.cs" />
+    <Compile Include="grid\FCGrid.cs" />
+    <Compile Include="label\FCLabel.cs" />
+    <Compile Include="label\FCLinkLabel.cs" />
+    <Compile Include="div\FCLayoutDiv.cs" />
+    <Compile Include="div\FCGroupBox.cs" />
+    <Compile Include="div\FCSplitLayoutDiv.cs" />
+    <Compile Include="div\FCTableLayoutDiv.cs" />
+    <Compile Include="div\FCMenu.cs" />
+    <Compile Include="div\FCMenuItem.cs" />
+    <Compile Include="core\FCNative.cs" />
+    <Compile Include="scroll\FCHScrollBar.cs" />
+    <Compile Include="div\FCDiv.cs" />
+    <Compile Include="scroll\FCScrollBar.cs" />
+    <Compile Include="scroll\FCVScrollBar.cs" />
+    <Compile Include="service\FCClientService.cs" />
+    <Compile Include="service\FCServerService.cs" />
+    <Compile Include="service\CFunctionBase.cs" />
+    <Compile Include="service\CFunctionEx.cs" />
+    <Compile Include="service\CFunctionHttp.cs" />
+    <Compile Include="service\FCHttpEasyService.cs" />
+    <Compile Include="service\FCHttpHardService.cs" />
+    <Compile Include="service\FCHttpMonitor.cs" />
+    <Compile Include="service\FCHttpGetService.cs" />
+    <Compile Include="service\FCHttpPostService.cs" />
+    <Compile Include="sock\FCClientSocket.cs" />
+    <Compile Include="sock\FCClientSockets.cs" />
+    <Compile Include="sock\FCServerSocket.cs" />
+    <Compile Include="sock\FCServerSockets.cs" />
+    <Compile Include="sock\FCSocketListener.cs" />
+    <Compile Include="sock\SOCKDATA.cs" />
+    <Compile Include="tab\FCTabControl.cs" />
+    <Compile Include="tab\FCTabPage.cs" />
+    <Compile Include="input\FCComboBox.cs">
+    </Compile>
+    <Compile Include="input\FCDateTimePicker.cs" />
+    <Compile Include="input\FCSpin.cs" />
+    <Compile Include="input\FCTextBox.cs" />
+    <Compile Include="div\FCToolTip.cs" />
+    <Compile Include="grid\FCTree.cs" />
+    <Compile Include="grid\FCTreeNode.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
+    <Compile Include="chart\BarShape.cs" />
+    <Compile Include="chart\BaseShape.cs" />
+    <Compile Include="chart\CandleShape.cs" />
+    <Compile Include="chart\ChartDiv.cs" />
+    <Compile Include="chart\ChartTitleBar.cs" />
+    <Compile Include="chart\CrossLine.cs" />
+    <Compile Include="chart\CrossLineTip.cs" />
+    <Compile Include="chart\ChartToolTip.cs" />
+    <Compile Include="chart\ScaleGrid.cs" />
+    <Compile Include="chart\HScale.cs" />
+    <Compile Include="chart\PolylineShape.cs" />
+    <Compile Include="chart\SelectArea.cs" />
+    <Compile Include="chart\VScale.cs" />
+    <Compile Include="div\FCWindow.cs" />
+    <Compile Include="div\FCWindowFrame.cs" />
+    <Compile Include="xml\FCUIEvent.cs" />
+    <Compile Include="xml\FCUIScript.cs" />
+    <Compile Include="xml\FCUIXml.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <SubType>Designer</SubType>
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Resources\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
