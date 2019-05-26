@@ -148,57 +148,121 @@ namespace FaceCat {
         public const int USER = 100000;
     }
 
+    /// <summary>
+    /// 自定义集合
+    /// </summary>
+    /// <typeparam name="T"></typeparam>
     public class ArrayList<T> : List<T> {
+        /// <summary>
+        /// 添加数据
+        /// </summary>
+        /// <param name="t">数据</param>
         public void add(T t) {
             Add(t);
         }
 
+        /// <summary>
+        /// 清除数据
+        /// </summary>
         public void clear() {
             Clear();
         }
 
+        /// <summary>
+        /// 获取数据
+        /// </summary>
+        /// <param name="index">索引</param>
+        /// <returns>数据</returns>
         public T get(int index) {
             return this[index];
         }
 
+        /// <summary>
+        /// 移除数据
+        /// </summary>
+        /// <param name="t">数据</param>
         public void remove(T t) {
             Remove(t);
         }
 
+        /// <summary>
+        /// 移除数据
+        /// </summary>
+        /// <param name="index">索引</param>
         public void removeAt(int index) {
             RemoveAt(index);
         }
 
+        /// <summary>
+        /// 设置数据
+        /// </summary>
+        /// <param name="index">索引</param>
+        /// <param name="t">数据</param>
         public void set(int index, T t) {
             this[index] = t;
         }
 
+        /// <summary>
+        /// 尺寸
+        /// </summary>
+        /// <returns></returns>
         public int size() {
             return Count;
         }
     }
 
+    /// <summary>
+    /// 自定义哈希表
+    /// </summary>
+    /// <typeparam name="K"></typeparam>
+    /// <typeparam name="V"></typeparam>
     public class HashMap<K, V> : Dictionary<K, V> {
+        /// <summary>
+        /// 清除数据
+        /// </summary>
         public void clear() {
             Clear();
         }
 
+        /// <summary>
+        /// 是否包含键
+        /// </summary>
+        /// <param name="k">键</param>
+        /// <returns>是否包含</returns>
         public bool containsKey(K k) {
             return ContainsKey(k);
         }
 
+        /// <summary>
+        /// 获取值
+        /// </summary>
+        /// <param name="k">键</param>
+        /// <returns>值</returns>
         public V get(K k) {
             return this[k];
         }
 
+        /// <summary>
+        /// 填充数据
+        /// </summary>
+        /// <param name="k">键</param>
+        /// <param name="v">值</param>
         public void put(K k, V v) {
             this[k] = v;
         }
 
+        /// <summary>
+        /// 移除数据
+        /// </summary>
+        /// <param name="k">键</param>
         public void remove(K k) {
             Remove(k);
         }
 
+        /// <summary>
+        /// 获取尺寸
+        /// </summary>
+        /// <returns>尺寸</returns>
         public int size() {
             return Count;
         }
