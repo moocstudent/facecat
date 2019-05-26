@@ -1,0 +1,2 @@
+# facecat
+FaceCat捂脸猫框架是一款跨平台跨语言的图形和通信服务框架，主要由矿洞程序员陶德制作。该框架有C++，C#，Java三个语言版本，支持在Windows，iOS，Android，MacOS，Linux上运行。该框架已经开源，协议为BSD，当前开放版本仅为底层框架，尚未包含示例，后期将会逐步推出其衍生品，目前包含以下几个项目： 1. facecat_cpp，使用vc++8.0标准开发，可以兼容vs2005，vs2008，vs2010，vs2013，vs2015，vs2017。 2. facecat_cs，使用.net2.0标准开发，可以兼容vs2005，vs2008，vs2010，vs2013，vs2015，vs2017。 3. facecat_java，使用jdk1.4标准开发，可以在大多数java的IDE中运行，包括开发Android。 4. facecat_ios，使用c++8.0标准开发，环境为linux，开发工具为XCode。 5. facecat_macos，使用c++8.0标准开发，环境为linux，开发工具为XCode。 6. iDesigner，使用.net2.0标准开发，为FaceCat的图形设计工具。
